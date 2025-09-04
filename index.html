@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arta Rețelelor - 4PCAN</title>
+    <title>Arta Rețelelor - 4P-CAN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <style>
         /* Toggle switch styles */
         .switch {
@@ -124,6 +126,7 @@
                 line-height: 1.6;
                 color: #333;
                 background-color: #fafafa;
+                padding-bottom: 100px;
             }
 
             .container {
@@ -220,7 +223,12 @@
             }
 
             /* Heading fonts */
-            h1, h2, h3, h4, h5, h6 {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
                 font-family: 'Nunito', sans-serif;
             }
 
@@ -260,6 +268,23 @@
                 font-size: 1.3rem;
                 margin-top: 20px;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .header-intro {
+                margin-top: 30px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .header-intro p {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #ffffff;
+                margin: 0;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
             }
 
             .gallery {
@@ -434,6 +459,63 @@
                 border-bottom-color: #FFC107;
             }
 
+            .footer-content {
+                position: relative;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                margin-bottom: 30px;
+            }
+
+            .footer-left {
+                flex: 0 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .footer-right {
+                flex: 1;
+                min-width: 0;
+                text-align: left;
+            }
+
+            .footer-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer-logo img {
+                max-height: 120px;
+                height: auto;
+                width: auto;
+                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+                display: block;
+            }
+
+            .footer-right p {
+                margin: 8px 0;
+                text-align: left;
+            }
+
+            .copyright {
+                margin-top: 30px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+                opacity: 0.8;
+                text-align: center;
+                position: relative;
+                z-index: 2;
+            }
+
+            .copyright p {
+                margin: 5px 0;
+                font-size: 0.9rem;
+            }
+
             @media (max-width: 768px) {
                 .artwork-image img {
                     width: 100%;
@@ -482,6 +564,29 @@
                 .header-left h1,
                 .header-left .subtitle {
                     text-align: center;
+                }
+
+                footer {
+                    padding: 30px 20px;
+                    text-align: center;
+                }
+
+                .footer-content {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 25px;
+                }
+
+                .footer-right {
+                    text-align: center;
+                }
+
+                .footer-right p {
+                    text-align: center;
+                }
+
+                .footer-logo img {
+                    max-height: 90px;
                 }
 
                 .artwork {
@@ -587,6 +692,10 @@
 
         /* Mobile specific adjustments */
         @media (max-width: 768px) {
+            body {
+                padding-bottom: 85px;
+            }
+
             .miniature-gallery {
                 padding: 8px 0 12px 0 !important;
                 justify-content: flex-start !important;
@@ -605,9 +714,17 @@
                 gap: 12px !important;
                 padding-right: 12px !important;
             }
+
+            .footer-logo img {
+                max-height: 60px;
+            }
         }
 
         @media (max-width: 480px) {
+            body {
+                padding-bottom: 75px;
+            }
+
             .gallery-images img {
                 width: 45px !important;
                 height: 32px !important;
@@ -615,6 +732,10 @@
 
             .gallery-images {
                 gap: 10px !important;
+            }
+
+            .footer-logo img {
+                max-height: 50px;
             }
         }
     </style>
@@ -655,32 +776,42 @@
                 <div class="header-content">
                     <div class="header-left">
                         <h1>ARTA REȚELELOR</h1>
-                        <p class="subtitle">Cum cetățenii, comunitatea și datele schimbă paradigma în prevenția primară a cancerului</p>
+                        <p class="subtitle">Cum cetățenii, comunitatea și datele schimbă paradigma în prevenția primară
+                            a cancerului</p>
                     </div>
                     <div class="header-right">
                         <div class="event-details">
-                            <p><strong>9-11 Septembrie 2024</strong></p>
-                            <p>Începând cu ora 10:00</p>
+                            <p><strong>9-11 Septembrie 2025</strong></p>
+                            <p>10:00 - 13:00</p>
+                            <p>16:00 - 19:00</p>
                             <p>Căminul Cultural Lerești</p>
                             <p class="free-entry">INTRAREA LIBERĂ</p>
                         </div>
                     </div>
+                </div>
+                <div class="header-intro">
+                    <p>Acesta este un spațiu în care arta, comunitatea și cercetarea se întâlnesc. Aici găsiți vizualizări care explorează legăturile sociale, sănătatea și viața de zi cu zi, prezentate ca povești vizuale și cu potențial imersiv. Vizualizările sunt realizate pe bază de date empirice reale culese de la cetățenii localității Lerești (Argeș), în cadrul proiectului 4P-CAN. Fiecare tablou este însoțit de o prezentare care include atât contextul, cât și informațiile tehnice.</p>
                 </div>
             </div>
             <div class="lang-en" style="display:none;">
                 <div class="header-content">
                     <div class="header-left">
                         <h1>NETWORK ART</h1>
-                        <p class="subtitle">How citizens, community, and data are changing the paradigm in primary cancer prevention</p>
+                        <p class="subtitle">How citizens, community, and data are changing the paradigm in primary
+                            cancer prevention</p>
                     </div>
                     <div class="header-right">
                         <div class="event-details">
-                            <p><strong>September 9-11, 2024</strong></p>
-                            <p>Starting at 10:00 AM</p>
+                            <p><strong>September 9-11, 2025</strong></p>
+                            <p>10:00 AM - 1:00 PM</p>
+                            <p>4:00 PM - 7:00 PM</p>
                             <p>Lerești Cultural Center</p>
                             <p class="free-entry">FREE ENTRY</p>
                         </div>
                     </div>
+                </div>
+                <div class="header-intro">
+                    <p>This is a space where art, community, and research come together. Here you will find visualizations that explore social ties, health, and everyday life, presented as visual stories with immersive potential. The visualizations are based on real empirical data collected from the citizens of Lerești (Argeș) within the 4P-CAN project. Each canvas is accompanied by a presentation that provides both context and technical information.</p>
                 </div>
             </div>
         </header>
@@ -693,22 +824,41 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Textura comunității</span>
-                        <span class="lang-en" style="display:none;">Community</span>
+                        <span class="lang-en" style="display:none;">Community Texture</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>Oamenii se adună în mod firesc pentru a forma comunități. În societate, depindem unii de
-                                alții. Atunci când întărim spiritul comunității, facem viața mai bună nu doar pentru
-                                grup în ansamblu, ci și pentru fiecare persoană, prin crearea unor șanse mai mari de
-                                a-și atinge potențialul. O societate cuprinde mereu mai multe tipuri de comunități, care
-                                coexistă în același timp. Toți trăim într-o rețea de relații sociale: unele le alegem,
-                                precum oamenii din Lerești care și-au ales compania unii altora, iar altele sunt
-                                modelate de împrejurări, cum este cazul românilor care pleacă la muncă în străinătate.
-                                În acest țesut invizibil, comunitatea joacă un rol esențial în prevenția primară și mai
-                                ales în prevenția primară a cancerului, pentru că puterea colectivă de informare,
-                                sprijin și solidaritate poate transforma intențiile individuale în obiceiuri sănătoase
-                                și durabile.<br><br></p>
+                            <p>Imaginea intitulată Textura comunității prezintă o parte din rețeaua socială a
+                                localității Lerești fiind formată din 2.378 de persoane și 30.359 de legături. Nodurile
+                                portocalii reprezintă cetățenii care au participat direct la interviuri, iar cele
+                                albastre persoanele menționate de ei. Dimensiunea nodurilor indică gradul de
+                                conectivitate: cu cât un individ are mai multe relații în această rețea, cu atât
+                                capacitatea sa de influență este mai mare. Această pânză arată cum comunitatea
+                                funcționează ca un țesut viu de legături prin care informația, sprijinul și obiceiurile
+                                se transmit. Din perspectiva prevenției primare a cancerului, implicarea cetățenilor
+                                devine esențială: atunci când locuitorii sunt co-autori ai intervențiilor, mesajele de
+                                sănătate se propagă rapid prin canalele naturale ale rețelei, transformând această hartă
+                                socială dintr-o simplă reprezentare vizuală într-un motor de schimbare colectivă și
+                                durabilă.<br><br></p>
                             <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Oamenii se adună în mod firesc pentru a forma comunități. În societate, depindem unii
+                                    de
+                                    alții. Atunci când întărim spiritul comunității, facem viața mai bună nu doar pentru
+                                    grup în ansamblu, ci și pentru fiecare persoană, prin crearea unor șanse mai mari de
+                                    a-și atinge potențialul. O societate cuprinde mereu mai multe tipuri de comunități,
+                                    care
+                                    coexistă în același timp. Toți trăim într-o rețea de relații sociale: unele le
+                                    alegem,
+                                    precum oamenii din Lerești care și-au ales compania unii altora, iar altele sunt
+                                    modelate de împrejurări, cum este cazul românilor care pleacă la muncă în
+                                    străinătate.
+                                    În acest țesut invizibil, comunitatea joacă un rol esențial în prevenția primară și
+                                    mai
+                                    ales în prevenția primară a cancerului, pentru că puterea colectivă de informare,
+                                    sprijin și solidaritate poate transforma intențiile individuale în obiceiuri
+                                    sănătoase
+                                    și durabile.<br><br></p>
                                 <p> Pânza intitulată Textura comunității ilustrează o rețea de tip ghem (hairball sau
                                     node-and-line) care include 2,378 de persoane (noduri) și 30,359 relații sociale
                                     (legături) de diverse tipuri. Nodurile colorate cu portocaliu reprezintă 122 de
@@ -761,52 +911,75 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="community.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>People naturally come together to form communities. In society, we all depend on one
-                                another. When we strengthen the spirit of community, we make life better not only for
-                                the group as a whole but also for each person, by creating greater opportunities to
-                                reach their potential. A society always contains many different types of communities
-                                that coexist at the
-                                same
-                                time. We all live within a web of social relationships: some we choose, like the
-                                people
-                                of Lerești choosing each other’s company, while others are shaped by circumstance,
-                                such
-                                as Romanians who go abroad for work. Within this invisible fabric, community plays a
-                                vital role in primary prevention, and especially in the primary prevention of
-                                cancer,
-                                because the collective power of information, support, and solidarity can transform
-                                individual intentions into lasting healthy habits.<br><br></p>
+                            <p>The image entitled Community Texture presents part of the social network of Lerești, made
+                                up of 2,378 individuals and 30,359 ties. The orange nodes represent citizens who
+                                participated directly in the interviews, while the blue nodes represent individuals
+                                mentioned by them. The size of the nodes indicates the degree of connectivity: the more
+                                relationships an individual has within this network, the greater their capacity for
+                                influence. This canvas shows how the community functions as a living fabric of ties
+                                through which information, support, and habits circulate. From the perspective of
+                                primary cancer prevention, citizen engagement becomes essential: when residents are
+                                co-authors of interventions, health messages spread quickly through the community's
+                                natural channels, transforming this social map from a simple visual representation into
+                                a driving force for collective and sustainable change.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>The canvas entitled Community Texture illustrates a hair-ball (node-and-line) type
-                                    network including 2,378 individuals (nodes) and 30,359 social relationships (ties)
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>People naturally come together to form communities. In society, we all depend on one
+                                    another. When we strengthen the spirit of community, we make life better not only
+                                    for
+                                    the group as a whole but also for each person, by creating greater opportunities to
+                                    reach their potential. A society always contains many different types of communities
+                                    that coexist at the
+                                    same
+                                    time. We all live within a web of social relationships: some we choose, like the
+                                    people
+                                    of Lerești choosing each other’s company, while others are shaped by circumstance,
+                                    such
+                                    as Romanians who go abroad for work. Within this invisible fabric, community plays a
+                                    vital role in primary prevention, and especially in the primary prevention of
+                                    cancer,
+                                    because the collective power of information, support, and solidarity can transform
+                                    individual intentions into lasting healthy habits.<br><br></p>
+                                <p>The canvas entitled Community Texture illustrates a hair-ball (node-and-line)
+                                    type
+                                    network including 2,378 individuals (nodes) and 30,359 social relationships
+                                    (ties)
                                     of
                                     various kinds. The orange-colored nodes represent 122 citizens of Lerești who
                                     participated in at least one interview within the longitudinal personal network
                                     study.
-                                    This research is part of the activities of the Lerești living lab developed under
+                                    This research is part of the activities of the Lerești living lab developed
+                                    under
                                     the
                                     4P-CAN project. The blue-colored nodes represent individuals mentioned by study
-                                    participants. In other words, across 266 interviews conducted in three waves, 122
+                                    participants. In other words, across 266 interviews conducted in three waves,
+                                    122
                                     people
-                                    provided information about 59% of Lerești residents aged 18 and over. The size of
+                                    provided information about 59% of Lerești residents aged 18 and over. The size
+                                    of
                                     each
                                     node is directly proportional to the number of ties that person has within the
                                     network.
-                                    Orange-colored ties mark relationships between participants in the study or between
+                                    Orange-colored ties mark relationships between participants in the study or
+                                    between
                                     participants and the people they nominated. Blue ties represent the connections
                                     among
-                                    individuals nominated by participants. In short, Community Texture is an image built
+                                    individuals nominated by participants. In short, Community Texture is an image
+                                    built
                                     from real data collected from the residents of Lerești (Argeș).<br><br></p>
 
-                                <p>Citizen engagement is the key to activating the ties displayed in this canvas: when
-                                    residents co-create interventions, information and support flow faster through the
-                                    community’s natural channels. Their participation turns the network from a map into
+                                <p>Citizen engagement is the key to activating the ties displayed in this canvas:
+                                    when
+                                    residents co-create interventions, information and support flow faster through
+                                    the
+                                    community’s natural channels. Their participation turns the network from a map
+                                    into
                                     a
                                     sustained engine of healthy change.<br><br></p>
 
@@ -817,21 +990,24 @@
                                     connected nodes (shown as larger in size) act as natural influencers, that is,
                                     individuals who, by their central position in the community, can amplify health
                                     messages
-                                    and catalyze the adoption of preventive behaviors. The density of ties indicates the
-                                    potential for social support to sustain lifestyle changes, while the diversity of
+                                    and catalyze the adoption of preventive behaviors. The density of ties indicates
+                                    the
+                                    potential for social support to sustain lifestyle changes, while the diversity
+                                    of
                                     relationship types suggests multiple pathways for transmitting knowledge and
                                     providing
-                                    the emotional support necessary to maintain healthy behaviors over the long term.
+                                    the emotional support necessary to maintain healthy behaviors over the long
+                                    term.
                                     Understanding this social architecture allows for the development of targeted
-                                    interventions that leverage the natural influence of local opinion leaders and the
+                                    interventions that leverage the natural influence of local opinion leaders and
+                                    the
                                     solidarity of the community to implement cancer prevention strategies more
                                     effectively.<br><br></p>
-
                             </div>
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="community.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -846,43 +1022,73 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Articulații în lumină</span>
-                        <span class="lang-en" style="display:none;">Link Tracing</span>
+                        <span class="lang-en" style="display:none;">Reveal the hidden</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>Relațiile sociale sunt prezente în fiecare aspect al vieții noastre, dar rămân
-                                invizibile pentru ochi. Ne mișcăm prin lume înconjurați de legături care ne
-                                conectează
-                                cu familia, prietenii, colegii și chiar cu străinii, dar aceste fire rămân ascunse
-                                până
-                                când se fac vizibile. Atunci când sunt dezvăluite, ele ilustrează frumusețea
-                                mecanismelor sociale: capacitatea noastră de a mobiliza resurse, de a ne sprijini
-                                unii
-                                pe alții și de a ajunge la cercuri sociale îndepărtate prin căi surprinzător de
-                                scurte.
-                                Ceea ce rămâne nevăzut în viața de zi cu zi devine, atunci când este vizualizat, o
-                                hartă
-                                vie a conexiunii umane. În acest țesut al legăturilor sociale, rețelele personale,
-                                familia și comunitatea devin un aliat esențial în prevenția primară a cancerului,
-                                prin
-                                forța colectivă de a susține obiceiuri sănătoase și de a răspândi cunoaștere și
-                                sprijin.<br><br></p>
+                            <p>Pânza Articulații în lumină dezvăluie arhitectura ascunsă a legăturilor sociale,
+                                făcând vizibile firele invizibile care conectează oamenii în viața de zi cu zi.
+                                Fiecare nod luminos reprezintă puncte de pornire sau seed-uri din care legăturile se
+                                ramifică în comunitatea Lerești. Liniile vibrante albastre, portocalii și galbene
+                                trasează trasee de interacțiune, arătând cum indivizii sunt legați prin familie,
+                                prietenii și rețele locale. Ceea ce pare o constelație este, de fapt, o hartă vie a
+                                conexiunii: un semnal că obiceiurile de sănătate și cunoașterea circulă prin aceste
+                                legături așa cum lumina circulă prin spațiu. Pentru prevenția cancerului, această
+                                vizualizare arată că a ajunge la indivizi înseamnă, de fapt, a ajunge și la rețelele
+                                lor. Ambasadorii sănătății (seed-urile), aleși cu grijă și legitimați de comunitate,
+                                pot deschide noi rute de influență, transformând conexiunile locale în canale
+                                puternice pentru răspândirea comportamentelor protectoare. Prin implicarea
+                                cetățenilor, aceste articulații de lumină transformă legăturile invizibile în căi
+                                active pentru sănătate, solidaritate și schimbare pe termen lung.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>Pânza intitulată Articulații în lumină prezintă, într-o formă stilizată, modalitatea
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Relațiile sociale sunt prezente în fiecare aspect al vieții noastre, dar rămân
+                                    invizibile pentru ochi. Ne mișcăm prin lume înconjurați de legături care ne
+                                    conectează
+                                    cu familia, prietenii, colegii și chiar cu străinii, dar aceste fire rămân
+                                    ascunse
+                                    până
+                                    când se fac vizibile. Atunci când sunt dezvăluite, ele ilustrează frumusețea
+                                    mecanismelor sociale: capacitatea noastră de a mobiliza resurse, de a ne
+                                    sprijini
+                                    unii
+                                    pe alții și de a ajunge la cercuri sociale îndepărtate prin căi surprinzător de
+                                    scurte.
+                                    Ceea ce rămâne nevăzut în viața de zi cu zi devine, atunci când este vizualizat,
+                                    o
+                                    hartă
+                                    vie a conexiunii umane. În acest țesut al legăturilor sociale, rețelele
+                                    personale,
+                                    familia și comunitatea devin un aliat esențial în prevenția primară a
+                                    cancerului,
+                                    prin
+                                    forța colectivă de a susține obiceiuri sănătoase și de a răspândi cunoaștere și
+                                    sprijin.<br><br></p>
+                                <p>Pânza intitulată Articulații în lumină prezintă, într-o formă stilizată,
+                                    modalitatea
                                     de
-                                    eșantionare prin rețele sociale la nivelul comunității Lerești. Rețeaua vizualizată
-                                    cuprinde 261 de persoane și 298 de legături unice. Procesul de eșantionare a pornit
+                                    eșantionare prin rețele sociale la nivelul comunității Lerești. Rețeaua
+                                    vizualizată
+                                    cuprinde 261 de persoane și 298 de legături unice. Procesul de eșantionare a
+                                    pornit
                                     de
                                     la șase puncte independente (seeds), reprezentate prin galben electric activat
                                     (seed-uri
-                                    care au participat la studiu) și roșu electric activat (seed care nu a participat la
-                                    studiu). Legăturile colorate în nuanțe electrice (portocaliu, galben, albastru cian)
-                                    indică diferite proprietăți structurale ale rețelei. Dintre cele 261 de persoane,
+                                    care au participat la studiu) și roșu electric activat (seed care nu a
+                                    participat la
+                                    studiu). Legăturile colorate în nuanțe electrice (portocaliu, galben, albastru
+                                    cian)
+                                    indică diferite proprietăți structurale ale rețelei. Dintre cele 261 de
+                                    persoane,
                                     122 au
-                                    participat la cel puțin un interviu în cadrul celor trei valuri, 4 nu au putut fi
-                                    conectate, 12 nu au fost disponibile, 5 au refuzat, iar 118 – deși nominalizate – nu
+                                    participat la cel puțin un interviu în cadrul celor trei valuri, 4 nu au putut
+                                    fi
+                                    conectate, 12 nu au fost disponibile, 5 au refuzat, iar 118 – deși nominalizate
+                                    – nu
                                     au
-                                    fost contactate de echipa de cercetare. Altfel spus, Articulații în lumină prezintă
+                                    fost contactate de echipa de cercetare. Altfel spus, Articulații în lumină
+                                    prezintă
                                     date
                                     reale de teren din localitatea Lerești (Argeș). Aceste date au fost strânse în
                                     cadrul
@@ -890,21 +1096,28 @@
                                     4P-CAN.<br><br></p>
 
                                 <p>Pentru prevenția primară, această vizualizare demonstrează cum se poate accesa și
-                                    mobiliza capitalul social al unei comunități prin abordări strategice. Punctele de
-                                    pornire (seeds) ilustrează importanța selectării atente a ambasadorilor sănătății,
+                                    mobiliza capitalul social al unei comunități prin abordări strategice. Punctele
+                                    de
+                                    pornire (seeds) ilustrează importanța selectării atente a ambasadorilor
+                                    sănătății,
                                     i.e.,
                                     persoane care pot deveni vectori naturali pentru diseminarea informațiilor de
                                     prevenție
-                                    și promovarea comportamentelor sănătoase. Diferitele nuanțe ale legăturilor relevă
-                                    diversitatea canalelor de comunicare și influență, sugerând că mesajele de prevenție
+                                    și promovarea comportamentelor sănătoase. Diferitele nuanțe ale legăturilor
+                                    relevă
+                                    diversitatea canalelor de comunicare și influență, sugerând că mesajele de
+                                    prevenție
                                     se
                                     pot adapta și transmite prin multiple căi sociale. Participarea variabilă (de la
-                                    acceptare la refuz) reflectă realitățile implementării intervențiilor comunitare,
+                                    acceptare la refuz) reflectă realitățile implementării intervențiilor
+                                    comunitare,
                                     evidențiind nevoia de strategii personalizate care să respecte dinamica socială
                                     locală.
-                                    Această hartă a conexiunilor oferă un cadru practic pentru dezvoltarea programelor
+                                    Această hartă a conexiunilor oferă un cadru practic pentru dezvoltarea
+                                    programelor
                                     de
-                                    prevenție care valorifică puterile sociale existente, transformând rețelele naturale
+                                    prevenție care valorifică puterile sociale existente, transformând rețelele
+                                    naturale
                                     în
                                     instrumente eficiente pentru promovarea sănătății și prevenției cancerului. De
                                     asemenea,
@@ -918,61 +1131,98 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="link_tracing.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>Social relationships are present in every aspect of our lives, yet they remain
-                                invisible
-                                to the eye. We move through the world surrounded by ties that connect us to family,
-                                friends, colleagues, and even strangers, but these threads stay hidden until they
-                                are
-                                revealed. When made visible, they illustrate the beauty of social mechanisms: our
-                                ability to mobilize resources, to support one another, and to reach distant social
-                                circles through surprisingly short paths. What remains unseen in daily life becomes,
-                                when visualized, a living map of human connection. Within this fabric of social
-                                ties,
-                                personal networks, family, and community become essential allies in the primary
-                                prevention of cancer, through the collective power to sustain healthy habits and to
-                                spread knowledge and support.<br><br></p>
+                            <p>The canvas Reveal the hidden presents the hidden architecture of social ties, making
+                                visible the invisible threads that connect people in everyday life. Each glowing
+                                node represents starting points, or seeds, from which relationships branch out into
+                                the wider community of Lerești. The vibrant blue, orange, and yellow lines trace
+                                pathways of interaction, showing how individuals are linked through families,
+                                friendships, and local networks. What might appear as a constellation is, in fact, a
+                                living map of connection: a reminder that health behaviors and knowledge travel
+                                through these ties just as light travels through space. For cancer prevention, this
+                                visualization demonstrates that reaching individuals also means reaching their
+                                networks. Carefully chosen health ambassadors, legitimized and supported by the
+                                community, can spark new routes of influence, turning local connections into
+                                powerful channels for spreading protective habits. By engaging citizens directly,
+                                these joints of light transform invisible bonds into active pathways for health,
+                                solidarity, and long-term change.<br><br></p>
                             <div class="more-text" style="display:none;">
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Social relationships are present in every aspect of our lives, yet they remain
+                                    invisible
+                                    to the eye. We move through the world surrounded by ties that connect us to
+                                    family,
+                                    friends, colleagues, and even strangers, but these threads stay hidden until
+                                    they
+                                    are
+                                    revealed. When made visible, they illustrate the beauty of social mechanisms:
+                                    our
+                                    ability to mobilize resources, to support one another, and to reach distant
+                                    social
+                                    circles through surprisingly short paths. What remains unseen in daily life
+                                    becomes,
+                                    when visualized, a living map of human connection. Within this fabric of social
+                                    ties,
+                                    personal networks, family, and community become essential allies in the primary
+                                    prevention of cancer, through the collective power to sustain healthy habits and
+                                    to
+                                    spread knowledge and support.<br><br></p>
                                 <p>The canvas entitled Reveal the hidden, in a stylized form, presents a method of
                                     social
-                                    network sampling within the Lerești community. The visualized network comprises 261
+                                    network sampling within the Lerești community. The visualized network comprises
+                                    261
                                     individuals and 298 unique ties. The sampling process began with six independent
                                     points
-                                    (seeds), represented in activated electric yellow (seeds that participated in the
+                                    (seeds), represented in activated electric yellow (seeds that participated in
+                                    the
                                     study)
-                                    and activated electric red (a seed that did not participate in the study). The ties,
-                                    shown in electric shades (orange, yellow, cyan blue), indicate different structural
-                                    properties of the network. Among the 261 individuals, 122 participated in at least
+                                    and activated electric red (a seed that did not participate in the study). The
+                                    ties,
+                                    shown in electric shades (orange, yellow, cyan blue), indicate different
+                                    structural
+                                    properties of the network. Among the 261 individuals, 122 participated in at
+                                    least
                                     one
-                                    interview across the three waves, 4 could not be connected, 12 were unavailable, 5
+                                    interview across the three waves, 4 could not be connected, 12 were unavailable,
+                                    5
                                     refused, and 118—although nominated—were not contacted by the research team. In
                                     other
                                     words, Reveal the hidden presents real field data from the community of Lerești
                                     (Argeș),
-                                    collected as part of a longitudinal personal network study supported by the 4P-CAN
+                                    collected as part of a longitudinal personal network study supported by the
+                                    4P-CAN
                                     project.<br><br></p>
 
-                                <p>From a primary prevention perspective, this visualization demonstrates how the social
-                                    capital of a community can be accessed and mobilized through strategic approaches.
+                                <p>From a primary prevention perspective, this visualization demonstrates how the
+                                    social
+                                    capital of a community can be accessed and mobilized through strategic
+                                    approaches.
                                     The
                                     starting points (seeds) illustrate the importance of carefully selecting health
                                     ambassadors, i.e., individuals who can become natural vectors for disseminating
-                                    preventive information and promoting healthy behaviors. The different shades of ties
+                                    preventive information and promoting healthy behaviors. The different shades of
+                                    ties
                                     reveal the diversity of communication and influence channels, suggesting that
                                     prevention
-                                    messages can be adapted and transmitted through multiple social pathways. Variable
-                                    participation (from acceptance to refusal) reflects the realities of implementing
-                                    community interventions, highlighting the need for tailored strategies that respect
-                                    local social dynamics. This map of connections provides a practical framework for
+                                    messages can be adapted and transmitted through multiple social pathways.
+                                    Variable
+                                    participation (from acceptance to refusal) reflects the realities of
+                                    implementing
+                                    community interventions, highlighting the need for tailored strategies that
+                                    respect
+                                    local social dynamics. This map of connections provides a practical framework
+                                    for
                                     developing prevention programs that use existing social strengths, transforming
                                     natural
                                     relationship networks into effective instruments for health promotion and cancer
-                                    prevention. Also, it should be underlined that the seeds work only when selected and
+                                    prevention. Also, it should be underlined that the seeds work only when selected
+                                    and
                                     supported with the community. Citizen engagement legitimizes health ambassadors,
                                     builds
                                     trust, and rapidly extends the paths through which prevention messages reach
@@ -982,7 +1232,7 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="link_tracing.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1001,53 +1251,89 @@
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p> Deciziile de vaccinare nu se iau în izolare, ci în inima familiei. Valorile legate de
-                                sănătate sunt fire nevăzute, țesute și negociate între oamenii importanți din viața
-                                noastră. De aceea, alegerile pro- sau anti-vaccinare nu se risipesc la întâmplare în
-                                societate, ci se adună în insule și constelații de legături. Intervențiile care privesc
-                                vaccinarea trebuie să atingă nu doar individul, ci și țesătura mai largă a familiei și a
-                                rețelelor sale apropiate.<br><br></p>
+                            <p>Tabloul Picătura de viață reunește 82 de ego-grame care arată cum deciziile de
+                                vaccinare se conturează în cercurile apropiate de familie și prieteni. Fiecare
+                                diagramă prezintă legăturile emoționale cele mai puternice ale unui respondent din
+                                Lerești: jumătatea portocalie indică persoanele din afara gospodăriei, iar cea
+                                galben-deschis pe cele din interior. Nodurile roșii reprezintă persoane percepute ca
+                                nevaccinate, iar cele albastre persoane vaccinate, conectate prin legături roșii
+                                (foarte apropiate) sau albastre (mai slabe). Privite împreună, imaginile arată cum
+                                deciziile de sănătate nu apar la întâmplare, ci se grupează în insule familiale și
+                                sociale, unde comportamentele tind să fie comune. Această vizualizare subliniază un
+                                principiu esențial: sănătatea se propagă prin proximitate emoțională, nu doar prin
+                                informare. De aceea, prevenția eficientă, fie că vorbim despre vaccinare sau despre
+                                reducerea riscului de cancer, necesită implicarea familiilor și a comunităților.
+                                Atunci când vocea cetățenilor este integrată și cei apropiați sunt mobilizați,
+                                mesajele de sănătate capătă greutate și devin parte a realității cotidiene.<br><br>
+                            </p>
                             <div class="more-text" style="display:none;">
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p> Deciziile de vaccinare nu se iau în izolare, ci în inima familiei. Valorile
+                                    legate
+                                    de
+                                    sănătate sunt fire nevăzute, țesute și negociate între oamenii importanți din
+                                    viața
+                                    noastră. De aceea, alegerile pro- sau anti-vaccinare nu se risipesc la
+                                    întâmplare în
+                                    societate, ci se adună în insule și constelații de legături. Intervențiile care
+                                    privesc
+                                    vaccinarea trebuie să atingă nu doar individul, ci și țesătura mai largă a
+                                    familiei
+                                    și a
+                                    rețelelor sale apropiate.<br><br></p>
                                 <p>Pânza intitulată Picătura de viață reunește 82 de ego-grame (imagini). Fiecare
                                     imagine
-                                    arată contactele sociale cele mai apropiate emoțional ale unei persoane și modul în
+                                    arată contactele sociale cele mai apropiate emoțional ale unei persoane și modul
+                                    în
                                     care
-                                    comportamentul de vaccinare se organizează în cercuri sociale. Altfel spus, fiecare
-                                    ego-gramă corespunde unui număr de 82 de respondenți intervievați în primul val al
+                                    comportamentul de vaccinare se organizează în cercuri sociale. Altfel spus,
+                                    fiecare
+                                    ego-gramă corespunde unui număr de 82 de respondenți intervievați în primul val
+                                    al
                                     studiului longitudinal de rețele sociale realizat în cadrul proiectului 4P-CAN.
                                     Fiecare
                                     plăcintă este împărțită în două: jumătatea portocalie indică persoane din afara
-                                    gospodăriei, iar cea galben-deschis persoane din aceeași gospodărie cu respondentul.
+                                    gospodăriei, iar cea galben-deschis persoane din aceeași gospodărie cu
+                                    respondentul.
                                     Nodurile roșii marchează persoane despre care respondentul crede că nu s-au
                                     vaccinat,
-                                    iar nodurile albastre persoane despre care știe că s-au vaccinat. Legăturile roșii
+                                    iar nodurile albastre persoane despre care știe că s-au vaccinat. Legăturile
+                                    roșii
                                     conectează persoane considerate foarte apropiate, în timp ce cele albastre
                                     semnalează o
                                     apropiere mai redusă. Privite împreună, cele 82 de imagini dezvăluie tipare de
-                                    percepție: de exemplu, tendința membrilor aceleiași gospodării de a fi raportați cu
+                                    percepție: de exemplu, tendința membrilor aceleiași gospodării de a fi raportați
+                                    cu
                                     același comportament de vaccinare.<br><br></p>
 
                                 <p>Pentru prevenția primară a cancerului, această colecție de rețele personale
                                     ilustrează
-                                    principiul fundamental că sănătatea se propagă prin proximitatea emoțională, nu prin
+                                    principiul fundamental că sănătatea se propagă prin proximitatea emoțională, nu
+                                    prin
                                     simpla informare. Gruparea observată în deciziile de vaccinare se aplică și
                                     comportamentelor de prevenție ale cancerului, de la adoptarea unei alimentații
                                     sănătoase
-                                    și renunțarea la fumat, până la participarea la screeninguri regulate. Intensitatea
-                                    legăturilor (roșu vs. albastru) sugerează că persoanele cu care avem relații foarte
-                                    strânse exercită o influență disproporționată asupra alegerilor noastre de sănătate.
+                                    și renunțarea la fumat, până la participarea la screeninguri regulate.
+                                    Intensitatea
+                                    legăturilor (roșu vs. albastru) sugerează că persoanele cu care avem relații
+                                    foarte
+                                    strânse exercită o influență disproporționată asupra alegerilor noastre de
+                                    sănătate.
                                     Organizarea comportamentelor în insule familiale și sociale sugerează că
                                     intervențiile
                                     de prevenție primară a cancerului trebuie să vizeze nu doar individul, ci
                                     ecosistemul
                                     relațional în care acesta ia decizii. Această perspectivă permite dezvoltarea de
-                                    strategii care mobilizează influența pozitivă a rețelelor apropiate pentru a susține
+                                    strategii care mobilizează influența pozitivă a rețelelor apropiate pentru a
+                                    susține
                                     și
                                     consolida adoptarea pe termen lung a stilurilor de viață care reduc riscul de
                                     cancer.
                                     Pentru că deciziile se iau în familie și în cercurile apropiate, intervențiile
                                     reușesc
-                                    când îi implică pe cei de lângă noi, părinți, bunici, prieteni. Vocea cetățenilor dă
+                                    când îi implică pe cei de lângă noi, părinți, bunici, prieteni. Vocea
+                                    cetățenilor dă
                                     nuanță mesajelor și le ancorează în realitatea afectivă a rețelelor
                                     personale.<br><br></p>
 
@@ -1055,57 +1341,93 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="covid.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p> Vaccination decisions are not made in isolation, but in the heart of the family. Health
-                                values are invisible threads, woven and negotiated among the important people in our
-                                lives. That is why pro- or anti-vaccination choices do not scatter randomly across
-                                society, but gather in islands and constellations of ties. Interventions related to
-                                vaccination must address not only the individual but also the wider fabric of family and
-                                close networks.</p>
+                            <p>The Inoculation canvas brings together 82 ego-grams that show how vaccination
+                                decisions take shape within close circles of family and friends. Each diagram
+                                depicts the strongest emotional ties of a respondent from Lerești: the orange half
+                                indicates people outside the household, while the light-yellow half shows those
+                                inside it. Red nodes represent individuals perceived as unvaccinated, while blue
+                                nodes represent vaccinated individuals, connected by red ties (very close) or blue
+                                ties (weaker closeness). Viewed together, the images reveal that health decisions do
+                                not occur randomly but cluster within family and social islands, where behaviors
+                                tend to be shared. This visualization highlights an essential principle: health
+                                spreads through emotional closeness, not just information. That is why effective
+                                prevention, whether for vaccination or cancer risk reduction, requires the
+                                involvement of families and communities. When citizens’ voices are integrated and
+                                close ties are mobilized, health messages gain weight and become part of everyday
+                                reality.<br><br></p>
                             <div class="more-text" style="display:none;">
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p> Vaccination decisions are not made in isolation, but in the heart of the family.
+                                    Health
+                                    values are invisible threads, woven and negotiated among the important people in
+                                    our
+                                    lives. That is why pro- or anti-vaccination choices do not scatter randomly
+                                    across
+                                    society, but gather in islands and constellations of ties. Interventions related
+                                    to
+                                    vaccination must address not only the individual but also the wider fabric of
+                                    family
+                                    and
+                                    close networks.<br><br></p>
                                 <p>The canvas entitled Inoculation brings together 82 ego-grams (images). Each image
                                     shows
                                     a person’s closest emotional social contacts and the way vaccination behavior is
-                                    organized within social circles. In other words, each ego-gram corresponds to one of
+                                    organized within social circles. In other words, each ego-gram corresponds to
+                                    one of
                                     the
                                     82 respondents interviewed in the first wave of the longitudinal social network
                                     study.
-                                    Each pie is divided in two: the orange half represents people outside the household,
-                                    while the light-yellow half represents people within the respondent’s household. Red
-                                    nodes mark individuals the respondent believes are not vaccinated, while blue nodes
+                                    Each pie is divided in two: the orange half represents people outside the
+                                    household,
+                                    while the light-yellow half represents people within the respondent’s household.
+                                    Red
+                                    nodes mark individuals the respondent believes are not vaccinated, while blue
+                                    nodes
                                     represent individuals known to be vaccinated. Red ties connect people considered
                                     very
                                     close, while blue ties indicate weaker closeness. Viewed together, the 82 images
                                     reveal
-                                    perception patterns; for example, the tendency of household members to be reported
+                                    perception patterns; for example, the tendency of household members to be
+                                    reported
                                     as
-                                    having the same vaccination behavior. The Inoculation canvas represents a collage of
-                                    real data collected in the community of Lerești (Argeș) during the first wave of the
+                                    having the same vaccination behavior. The Inoculation canvas represents a
+                                    collage of
+                                    real data collected in the community of Lerești (Argeș) during the first wave of
+                                    the
                                     longitudinal personal network study carried out within the 4P-CAN project.
 
-                                <p>For primary cancer prevention, this collection of personal networks illustrates the
-                                    fundamental principle that health behaviors spread through emotional closeness, not
+                                <p>For primary cancer prevention, this collection of personal networks illustrates
+                                    the
+                                    fundamental principle that health behaviors spread through emotional closeness,
+                                    not
                                     mere
-                                    information. The clustering patterns observed in vaccination decisions also apply to
-                                    cancer-preventive behaviors, e.g., from adopting a healthy diet and quitting smoking
+                                    information. The clustering patterns observed in vaccination decisions also
+                                    apply to
+                                    cancer-preventive behaviors, e.g., from adopting a healthy diet and quitting
+                                    smoking
                                     to
-                                    participating in regular screenings. The intensity of ties (red vs. blue) suggests
+                                    participating in regular screenings. The intensity of ties (red vs. blue)
+                                    suggests
                                     that
                                     those with whom we share the closest relationships exert a disproportionate
                                     influence on
-                                    our health choices. The organization of behaviors into family and social clusters
+                                    our health choices. The organization of behaviors into family and social
+                                    clusters
                                     indicates that primary cancer prevention interventions must target not only the
                                     individual but also the relational ecosystem in which decisions are made. This
                                     perspective enables the development of strategies that mobilize the positive
                                     influence
                                     of close networks to support and strengthen the long-term adoption of lifestyles
                                     that
-                                    reduce cancer risk. Additionally, as decisions are made within families and close
+                                    reduce cancer risk. Additionally, as decisions are made within families and
+                                    close
                                     circles, interventions succeed when they engage those around us, parents,
                                     grandparents
                                     and friends. Citizen voices nuance the messages and anchor them in the emotional
@@ -1116,7 +1438,7 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="covid.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1131,37 +1453,54 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Galaxia nutriției</span>
-                        <span class="lang-en" style="display:none;">Nutrition</span>
+                        <span class="lang-en" style="display:none;">Nutrition panoply</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>Mâncarea nu este doar un act individual, ci un ritual colectiv. Ea funcționează ca una
-                                dintre cele mai puternice instituții sociale: aduce oamenii împreună, creează punți de
-                                încredere și țese fire subtile de intimitate. În jurul mesei, oamenii se influențează
-                                reciproc, își împărtășesc secrete, iar cu timpul ajung să împărtășească obiceiuri
-                                alimentare
-                                comune și durabile. Gusturile se transmit, se amestecă, se împrumută, până când devin un
-                                patrimoniu comun al prietenilor și al familiilor. De aceea, a schimba felul în care
-                                mănâncă
-                                o persoană înseamnă, inevitabil, a schimba felul în care mănâncă prietenii și apropiații
-                                săi. Orice intervenție, fie că vizează reducerea consumului de sare sau adoptarea altor
-                                obiceiuri sănătoase, trebuie să privească nu doar individul, ci și comunitatea restrânsă
-                                în
-                                care acesta este ancorat.<br><br></p>
+                            <p>Pânza cu numele Galaxia nutriției arată cum obiceiurile alimentare sunt adânc
+                                înrădăcinate în țesătura socială a vieții de zi cu zi. Fiecare rețea reprezintă
+                                contactele sociale apropiate ale câte unui respondent din Lerești, cu noduri
+                                portocalii
+                                pentru persoanele care consumă frecvent alimente procesate sărate și noduri albastre
+                                pentru cei care le consumă mai rar. Ceea ce vedem nu sunt doar alegeri individuale,
+                                ci
+                                felul în care comportamentele alimentare se grupează și se răspândesc în familii și
+                                cercuri de prieteni. Rețelele dominate de portocaliu dezvăluie medii unde
+                                alimentația
+                                nesănătoasă este normalizată și întărită, în timp ce rețelele predominant albastre
+                                evidențiază contexte mai sănătoase. Rețelele mixte arată atât tensiuni, cât și
+                                oportunități, unde influența pozitivă poate cataliza schimbarea către diete mai
+                                protectoare. Din perspectiva prevenției cancerului, imaginea ne amintește că
+                                schimbarea
+                                nutrițională nu este doar o chestiune individuală, ci una colectivă, care necesită
+                                implicarea cetățenilor. Prin colaborarea cu grupurile care iau masa împreună și
+                                împărtășesc obiceiuri zilnice, comunitățile pot transforma masa comună într-un
+                                spațiu al
+                                schimbării, unde practicile sănătoase prind rădăcini și se răspândesc prin puterea
+                                legăturilor sociale.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>Pânza intitulată Galaxia nutriției oferă o poveste vizuală a 83 de respondenți din
-                                    primul val al studiului longitudinal de rețele personale desfășurat în localitatea
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Pânza intitulată Galaxia nutriției oferă o poveste vizuală a 83 de respondenți
+                                    din
+                                    primul val al studiului longitudinal de rețele personale desfășurat în
+                                    localitatea
                                     Lerești (Argeș), în cadrul proiectului 4P-CAN. Fiecare rețea arată modul în care
-                                    contactele sociale ale respondenților interacționează, legăturile reprezentând un
+                                    contactele sociale ale respondenților interacționează, legăturile reprezentând
+                                    un
                                     grad
-                                    ridicat de apropiere emoțională. Nodurile portocalii indică persoane care consumă
-                                    frecvent (zilnic sau săptămânal) alimente procesate cu conținut ridicat de sare, iar
+                                    ridicat de apropiere emoțională. Nodurile portocalii indică persoane care
+                                    consumă
+                                    frecvent (zilnic sau săptămânal) alimente procesate cu conținut ridicat de sare,
+                                    iar
                                     nodurile albastre persoane care consumă mai rar aceste alimente. Rețelele sunt
                                     ordonate
-                                    de la cea mai mare la cea mai mică concentrare de consumatori de produse procesate.
+                                    de la cea mai mare la cea mai mică concentrare de consumatori de produse
+                                    procesate.
                                     Pânza evidențiază puternice efecte de similaritate: de regulă, respondenții care
                                     consumă
-                                    frecvent astfel de alimente sunt înconjurați de prieteni și membri ai familiei cu
+                                    frecvent astfel de alimente sunt înconjurați de prieteni și membri ai familiei
+                                    cu
                                     obiceiuri similare, deși în unele cazuri apar și amestecuri de preferințe
                                     alimentare.
                                     <br><br>
@@ -1175,15 +1514,18 @@
                                     (consum
                                     redus) sugerează că schimbarea alimentară nu este un proces individual, ci unul
                                     colectiv
-                                    care se răspândește prin proximitate socială. Gruparea comportamentelor alimentare
-                                    demonstrează că intervențiile de nutriție au șanse mai mari de succes când vizează
+                                    care se răspândește prin proximitate socială. Gruparea comportamentelor
+                                    alimentare
+                                    demonstrează că intervențiile de nutriție au șanse mai mari de succes când
+                                    vizează
                                     grupuri sociale coezive, nu indivizi in izolare. Rețelele mixte
                                     (portocaliu-albastru)
                                     identifică punctele de tensiune și oportunitate, unde influența pozitivă poate
                                     cataliza
                                     schimbarea către diete bogate în antioxidanți, fibre și nutrienți protectivi.
                                     Această
-                                    perspectivă permite dezvoltarea de strategii care valorifică puterea ritualista a
+                                    perspectivă permite dezvoltarea de strategii care valorifică puterea ritualista
+                                    a
                                     mesei
                                     comune pentru a promova alimentația ca instrument de prevenție a cancerului la
                                     nivelul
@@ -1199,55 +1541,109 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="nutrition.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>Food is not just an individual act, but a collective ritual. It functions as one of the
-                                strongest social institutions: bringing people together, building bridges of trust, and
-                                weaving subtle threads of intimacy. Around the table, people influence one another,
-                                share secrets, and over time come to share common and enduring eating habits. Tastes are
-                                passed on, mixed, and borrowed until they become a shared heritage of friends and
-                                families. That is why changing the way one person eats inevitably means changing the way
-                                their friends and close ones eat as well. Any intervention, e.g., whether aimed at
-                                reducing salt intake or adopting other healthy practices, must address not only the
-                                individual but also the close community in which they are embedded.<br><br></p>
+                            <p>The canvas entitled Nutrition panoply shows how eating habits are deeply rooted in
+                                the social fabric of everyday life. Each network represents the close social
+                                contacts of a respondent from Lerești, with orange nodes for people who frequently
+                                consume salty processed foods and blue nodes for those who consume them less often.
+                                What we see are not just individual choices, but the way eating behaviors cluster
+                                and spread within families and circles of friends. Networks dominated by orange
+                                reveal environments where unhealthy diets are normalized and reinforced, while
+                                predominantly blue networks highlight healthier contexts. Mixed networks reveal both
+                                tensions and opportunities, where positive influence can catalyze a shift toward
+                                more protective diets. From the perspective of cancer prevention, the image reminds
+                                us that nutritional change is not only an individual matter but a collective one
+                                that requires citizen engagement. By collaborating with groups who share meals and
+                                daily habits, communities can transform the shared table into a space of change,
+                                where healthy practices take root and spread through the power of social
+                                ties.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>The canvas entitled Nutrition panoply presents a visual story of 83 respondents from
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Food is not just an individual act, but a collective ritual. It functions as one
+                                    of
                                     the
-                                    first wave of the longitudinal personal network study conducted in the community of
+                                    strongest social institutions: bringing people together, building bridges of
+                                    trust,
+                                    and
+                                    weaving subtle threads of intimacy. Around the table, people influence one
+                                    another,
+                                    share secrets, and over time come to share common and enduring eating habits.
+                                    Tastes
+                                    are
+                                    passed on, mixed, and borrowed until they become a shared heritage of friends
+                                    and
+                                    families. That is why changing the way one person eats inevitably means changing
+                                    the
+                                    way
+                                    their friends and close ones eat as well. Any intervention, e.g., whether aimed
+                                    at
+                                    reducing salt intake or adopting other healthy practices, must address not only
+                                    the
+                                    individual but also the close community in which they are embedded.<br><br></p>
+                                <p>Collective feeding systems, such as school or corporate canteens, are
+                                    particularly
+                                    important for this very reason. Any change in a canteen's menu can quickly
+                                    spread
+                                    within the community of those who eat there and propagate to their family or
+                                    friend
+                                    networks. In the long run, these changes can prove much more effective than any
+                                    individual information or education campaigns. Family and friend networks offer
+                                    any
+                                    healthy eating promotion strategy a unique opportunity for social transformation
+                                    and, ultimately, for transforming population health.<br><br></p>
+                                <p>The canvas entitled Nutrition panoply presents a visual story of 83 respondents
+                                    from
+                                    the
+                                    first wave of the longitudinal personal network study conducted in the community
+                                    of
                                     Lerești (Argeș), within the 4P-CAN project. Each network shows how respondents’
                                     social
                                     contacts interact, with ties representing a high degree of perceived emotional
                                     closeness. Orange nodes indicate people who frequently (daily or weekly) consume
-                                    processed foods high in salt, while blue nodes indicate those who consume such foods
-                                    more rarely. The networks are arranged from the highest to the lowest concentration
+                                    processed foods high in salt, while blue nodes indicate those who consume such
+                                    foods
+                                    more rarely. The networks are arranged from the highest to the lowest
+                                    concentration
                                     of
                                     processed food consumers. The canvas highlights strong similarity effects:
                                     typically,
-                                    respondents who frequently consume these foods are surrounded by friends and family
-                                    members with similar habits, although in some cases mixed dietary preferences also
+                                    respondents who frequently consume these foods are surrounded by friends and
+                                    family
+                                    members with similar habits, although in some cases mixed dietary preferences
+                                    also
                                     appear.<br><br></p>
 
-                                <p>From a primary cancer prevention perspective, this collection of networks illustrates
+                                <p>From a primary cancer prevention perspective, this collection of networks
+                                    illustrates
                                     a
                                     fundamental principle: food habits that reduce cancer risk are strengthened and
                                     sustained through group effects. The visual transition from predominantly orange
-                                    networks (high consumption of processed foods) to blue networks (low consumption)
-                                    suggests that dietary change is not an individual process, but a collective one that
-                                    spreads through social proximity. The clustering of food behaviors demonstrates that
+                                    networks (high consumption of processed foods) to blue networks (low
+                                    consumption)
+                                    suggests that dietary change is not an individual process, but a collective one
+                                    that
+                                    spreads through social proximity. The clustering of food behaviors demonstrates
+                                    that
                                     preventive nutrition interventions are more likely to succeed when targeting
                                     cohesive
                                     social groups rather than individuals in isolation. Mixed networks (orange-blue)
-                                    identify points of tension and opportunity, where positive influence can catalyze
+                                    identify points of tension and opportunity, where positive influence can
+                                    catalyze
                                     shifts
-                                    toward diets rich in antioxidants, fiber, and protective nutrients. This perspective
+                                    toward diets rich in antioxidants, fiber, and protective nutrients. This
+                                    perspective
                                     enables the development of strategies that harness the ritualistic power of the
                                     shared
-                                    meal to promote nutrition as a tool for cancer prevention within families and close
-                                    communities. Also, dietary change takes root when co-designed with the groups who
+                                    meal to promote nutrition as a tool for cancer prevention within families and
+                                    close
+                                    communities. Also, dietary change takes root when co-designed with the groups
+                                    who
                                     eat
                                     together. Citizen engagement helps identify the shared table as an intervention
                                     space
@@ -1257,7 +1653,7 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="nutrition.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1272,51 +1668,98 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Fire de fum</span>
-                        <span class="lang-en" style="display:none;">Smoking</span>
+                        <span class="lang-en" style="display:none;">Ties in smoke</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>
-                                Fumatul nu este doar un gest individual, ci un ritual social care leagă și desparte în
-                                același timp. Țigara aprinsă devine pretext de întâlnire, de conversație, de
-                                solidaritate între prieteni sau colegi. Fumul trasează cercuri invizibile de
-                                apartenență, dar și granițe între cei care participă la acest obicei și cei care rămân
-                                în afara lui. Așa cum se împărtășește focul unei brichete, se împărtășesc și normele,
-                                obișnuințele și, uneori, dependența. A schimba comportamentul de fumat al unei persoane
-                                înseamnă a atinge întregul său cerc de prieteni și legături. Orice intervenție trebuie
-                                să țină cont nu doar de fumătorul individual, ci și de rețeaua socială care îi întreține
-                                sau îi poate transforma obiceiul.
+                            <p>Pânza intitulată Fire de fum arată cum fumatul este adânc înrădăcinat în țesătura
+                                socială a vieții de zi cu zi. Fiecare imagine reprezintă contactele apropiate ale
+                                câte
+                                unui respondent din Lerești, organizate după statutul de fumat: roșu pentru
+                                fumători,
+                                albastru pentru foști fumători și verde pentru nefumători. Liniile roșii leagă
+                                fumătorii
+                                de celelalte grupuri. Ceea ce vedem nu sunt doar alegeri individuale izolate, ci
+                                felul
+                                în care comportamentele de fumat circulă prin rețele de prieteni, familie și
+                                cunoscuți.
+                                Grupurile dense de legături roșii dezvăluie medii unde fumatul este normalizat și
+                                întărit. Acolo unde liniile roșii sunt mai rare sau lipsesc putem aștepta contexte
+                                în
+                                care fumatul este mai degrabă izolat social. Din perspectiva prevenției cancerului,
+                                aceste tipare arată că renunțarea la fumat nu ține doar de voința individuală, ci și
+                                de
+                                influența colectivă. Implicarea comunităților (nefumători, foști fumători și lideri
+                                informali) creează ecosisteme protectoare unde normele sănătoase se răspândesc,
+                                demonstrând că legăturile sociale pot fi aliați puternici în reducerea riscurilor
+                                asociate tutunului.
                                 <br><br>
                             </p>
                             <div class="more-text" style="display:none;">
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>
+                                    Fumatul nu este doar un gest individual, ci un ritual social care leagă și
+                                    desparte
+                                    în
+                                    același timp. Țigara aprinsă devine pretext de întâlnire, de conversație, de
+                                    solidaritate între prieteni sau colegi. Fumul trasează cercuri invizibile de
+                                    apartenență, dar și granițe între cei care participă la acest obicei și cei care
+                                    rămân
+                                    în afara lui. Așa cum se împărtășește focul unei brichete, se împărtășesc și
+                                    normele,
+                                    obișnuințele și, uneori, dependența. A schimba comportamentul de fumat al unei
+                                    persoane
+                                    înseamnă a atinge întregul său cerc de prieteni și legături. Orice intervenție
+                                    trebuie
+                                    să țină cont nu doar de fumătorul individual, ci și de rețeaua socială care îi
+                                    întreține
+                                    sau îi poate transforma obiceiul.
+                                    <br><br>
+                                </p>
                                 <p>Pânza Fire de fum prezintă o colecție de imagini de tip hive-plot. Acestea sunt
-                                    ilustrări speciale care împart pe trei axe apropiații celor 83 de respondenți din
-                                    localitatea Lerești (Argeș) în funcție de statusul de fumat. Datele sunt culese din
+                                    ilustrări speciale care împart pe trei axe apropiații celor 83 de respondenți
+                                    din
+                                    localitatea Lerești (Argeș) în funcție de statusul de fumat. Datele sunt culese
+                                    din
                                     primul val al studiului longitudinal de rețele personale realizat în cadrul
                                     proiectului
-                                    4P-CAN. Cu roșu sunt marcate persoanele care fumează, cu albastru persoanele care au
-                                    renunțat la fumat, iar cu verde persoanele despre care respondenții știu că nu au
+                                    4P-CAN. Cu roșu sunt marcate persoanele care fumează, cu albastru persoanele
+                                    care au
+                                    renunțat la fumat, iar cu verde persoanele despre care respondenții știu că nu
+                                    au
                                     fumat
-                                    niciodată. În fiecare categorie, nodurile de nuanță închisă (roșu închis, albastru
-                                    închis, verde închis) identifică bărbații, iar nuanțele deschise, femeile. Liniile
+                                    niciodată. În fiecare categorie, nodurile de nuanță închisă (roșu închis,
+                                    albastru
+                                    închis, verde închis) identifică bărbații, iar nuanțele deschise, femeile.
+                                    Liniile
                                     de
-                                    culoare roșie conectează fumătorii cu nefumătorii sau foștii fumători. Liniile albe
+                                    culoare roșie conectează fumătorii cu nefumătorii sau foștii fumători. Liniile
+                                    albe
                                     conectează nefumătorii cu foștii fumători.<br><br></p>
 
-                                <p>Această pânză poate fi citită ca o hartă de risc. În aproape toate cele 83 de rețele
+                                <p>Această pânză poate fi citită ca o hartă de risc. În aproape toate cele 83 de
+                                    rețele
                                     personale, legăturile roșii marchează expunerea la riscul fumatului (de exemplu,
                                     fumat
-                                    pasiv). Rețelele cu multe legături roșii pot indica spații sociale în care fumatul
+                                    pasiv). Rețelele cu multe legături roșii pot indica spații sociale în care
+                                    fumatul
                                     și
-                                    fumătorii întâmpină mai puțină rezistență socială. Rețelele cu mai puține legături
+                                    fumătorii întâmpină mai puțină rezistență socială. Rețelele cu mai puține
+                                    legături
                                     roșii
-                                    evidențiază contexte sociale unde fumatul tinde să fie mai degrabă izolat social.
-                                    Legăturile albe subliniază conexiunile dintre nefumători și foștii fumători, care
+                                    evidențiază contexte sociale unde fumatul tinde să fie mai degrabă izolat
+                                    social.
+                                    Legăturile albe subliniază conexiunile dintre nefumători și foștii fumători,
+                                    care
                                     pot
-                                    revela sisteme de sprijin social pentru renunțarea la fumat. Diversitatea de rețele
-                                    demonstrează că fumatul creează spații sociale extrem de diferite: de la amestecul
+                                    revela sisteme de sprijin social pentru renunțarea la fumat. Diversitatea de
+                                    rețele
+                                    demonstrează că fumatul creează spații sociale extrem de diferite: de la
+                                    amestecul
                                     de
-                                    fumători cu nefumători și foști fumători până la comunități puternic segregate pe
+                                    fumători cu nefumători și foști fumători până la comunități puternic segregate
+                                    pe
                                     dimensiunea statusului de fumat.<br><br></p>
 
                                 <p>Pentru prevenția primară a cancerului, această colecție de rețele dezvăluie
@@ -1324,9 +1767,12 @@
                                     socială a celui mai important factor de risc controlabil. Legăturile roșii dense
                                     semnalează zone de risc social unde inițierea fumatului este facilitată de
                                     normalitatea
-                                    și acceptarea acestui comportament în cercurile apropiate. Invers, configurațiile cu
-                                    predominanța legăturilor albe și a nodurilor verzi identifică ecosisteme protectoare
-                                    unde renunțarea la fumat beneficiază de suport social și unde nefumatul este norma
+                                    și acceptarea acestui comportament în cercurile apropiate. Invers,
+                                    configurațiile cu
+                                    predominanța legăturilor albe și a nodurilor verzi identifică ecosisteme
+                                    protectoare
+                                    unde renunțarea la fumat beneficiază de suport social și unde nefumatul este
+                                    norma
                                     dominantă. Prezența foștilor fumători (nodurile albastre) în rețele oferă dovezi
                                     reale
                                     că renunțarea este posibilă, funcționând ca modele de comportament și surse de
@@ -1334,56 +1780,93 @@
                                     risc
                                     crescut și dezvoltarea de intervenții care valorifică influența pozitivă a
                                     nefumătorilor
-                                    și foștilor fumători pentru a cataliza renunțarea la fumat și prevenția cancerelor
-                                    asociate tutunului. Suplimentar, pentru a reduce fumatul, comunitatea trebuie să fie
+                                    și foștilor fumători pentru a cataliza renunțarea la fumat și prevenția
+                                    cancerelor
+                                    asociate tutunului. Suplimentar, pentru a reduce fumatul, comunitatea trebuie să
+                                    fie
                                     parte din soluție: foștii fumători, nefumătorii și liderii informali pot deveni
                                     sprijinul de zi cu zi pentru renunțare. Implicarea lor schimbă normele din
                                     interiorul
-                                    rețelelor, acolo unde tentația și sprijinul se joacă la distanțe scurte.<br><br></p>
+                                    rețelelor, acolo unde tentația și sprijinul se joacă la distanțe scurte.<br><br>
+                                </p>
                             </div>
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="smoking.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>Smoking is not just an individual gesture, but a social ritual that both connects and
-                                divides. The lit cigarette becomes a pretext for meeting, for conversation, for
-                                solidarity among friends or colleagues. Smoke traces invisible circles of belonging, but
-                                also boundaries between those who share the habit and those who remain outside it. Just
-                                as the flame of a lighter is shared, so too are norms, routines, and sometimes
-                                dependencies. Changing a person’s smoking behavior means touching their entire circle of
-                                friends and ties. Any intervention must take into account not only the individual smoker
-                                but also the social network that sustains or can transform the habit.<br><br></p>
+                            <p>The canvas titled Ties in smoke shows how smoking is deeply embedded in the social
+                                fabric of everyday life. Each image represents the close contacts of one respondent
+                                from
+                                Lerești, organized by smoking status: red for smokers, blue for former smokers, and
+                                green for non-smokers. Red lines connect smokers to the other groups. What we see
+                                are
+                                not just isolated individual choices, but how smoking behaviors circulate through
+                                networks of friends, family, and acquaintances. Dense groups of red ties reveal
+                                environments where smoking is normalized and reinforced. Where red lines are fewer
+                                or
+                                absent, we can expect contexts in which smoking is more socially isolated. From the
+                                perspective of cancer prevention, these patterns show that quitting smoking depends
+                                not
+                                only on individual willpower but also on collective influence. The engagement of
+                                communities (non-smokers, former smokers, and informal leaders) creates protective
+                                ecosystems where healthy norms spread, demonstrating that social ties can be
+                                powerful
+                                allies in reducing tobacco-related risks.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>The canvas Ties in smoke presents a collection of hive-plot images. These special
-                                    illustrations divide, along three axes, the close contacts of 83 respondents from
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Smoking is not just an individual gesture, but a social ritual that both connects
+                                    and
+                                    divides. The lit cigarette becomes a pretext for meeting, for conversation, for
+                                    solidarity among friends or colleagues. Smoke traces invisible circles of
+                                    belonging,
+                                    but also boundaries between those who share the habit and those who remain
+                                    outside
+                                    it. Just as the flame of a lighter is shared, so too are norms, routines, and
+                                    sometimes dependencies. Changing a person’s smoking behavior means touching
+                                    their
+                                    entire circle of friends and ties. Any intervention must take into account not
+                                    only
+                                    the individual smoker but also the social network that sustains or can transform
                                     the
-                                    community of Lerești (Argeș), according to smoking status. The data were collected
+                                    habit. <br><br></p>
+                                <p>The canvas Ties in smoke presents a collection of hive-plot images. These special
+                                    illustrations divide, along three axes, the close contacts of 83 respondents
+                                    from
+                                    the
+                                    community of Lerești (Argeș), according to smoking status. The data were
+                                    collected
                                     in
                                     the first wave of the longitudinal personal network study carried out within the
                                     4P-CAN
                                     project. Smokers are marked in red, former smokers in blue, and people whom
                                     respondents
-                                    know have never smoked in green. Within each category, darker shades (dark red, dark
+                                    know have never smoked in green. Within each category, darker shades (dark red,
+                                    dark
                                     blue, dark green) identify men, while lighter shades represent women. Red lines
                                     connect
-                                    smokers with non-smokers or former smokers, while white lines connect non-smokers
+                                    smokers with non-smokers or former smokers, while white lines connect
+                                    non-smokers
                                     with
                                     former smokers.<br><br></p>
 
                                 <p>This canvas can be read as a map of risk. In nearly all 83 personal networks, red
                                     ties
-                                    highlight exposure to the risks of smoking (such as passive smoking). Networks with
+                                    highlight exposure to the risks of smoking (such as passive smoking). Networks
+                                    with
                                     many
                                     red ties may indicate social spaces where smoking and smokers face little social
-                                    resistance. Networks with fewer red ties reflect contexts where smoking tends to be
+                                    resistance. Networks with fewer red ties reflect contexts where smoking tends to
+                                    be
                                     socially isolated. White ties emphasize the connections between non-smokers and
                                     former
-                                    smokers, revealing potential systems of social support for quitting. The diversity
+                                    smokers, revealing potential systems of social support for quitting. The
+                                    diversity
                                     of
                                     networks shows that smoking creates very different social spaces: from mixed
                                     communities
@@ -1392,23 +1875,30 @@
 
                                 <p>From the perspective of primary cancer prevention, this collection of networks
                                     reveals
-                                    the social architecture of the most significant controllable risk factor. Dense red
+                                    the social architecture of the most significant controllable risk factor. Dense
+                                    red
                                     ties
-                                    signal social risk zones where smoking initiation is facilitated by the normality
+                                    signal social risk zones where smoking initiation is facilitated by the
+                                    normality
                                     and
                                     acceptability of the behavior within close circles. Conversely, configurations
                                     dominated
                                     by white ties and green nodes identify protective ecosystems where quitting is
                                     socially
-                                    supported and non-smoking is the dominant norm. The presence of former smokers (blue
-                                    nodes) within networks provides tangible evidence that quitting is possible, serving
+                                    supported and non-smoking is the dominant norm. The presence of former smokers
+                                    (blue
+                                    nodes) within networks provides tangible evidence that quitting is possible,
+                                    serving
                                     as
                                     behavioral models and sources of encouragement. This perspective enables the
                                     targeted
-                                    identification of high-risk communities and the development of interventions that
+                                    identification of high-risk communities and the development of interventions
+                                    that
                                     use
-                                    the positive influence of non-smokers and former smokers to catalyze quitting and
-                                    prevent tobacco-related cancers. Moreover, to reduce smoking, the community must be
+                                    the positive influence of non-smokers and former smokers to catalyze quitting
+                                    and
+                                    prevent tobacco-related cancers. Moreover, to reduce smoking, the community must
+                                    be
                                     part
                                     of the solution: former smokers, non-smokers, and informal leaders can provide
                                     day-to-day support for quitting. Their engagement shifts norms from within the
@@ -1419,7 +1909,7 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="smoking.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1434,157 +1924,252 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Geografia riscului</span>
-                        <span class="lang-en" style="display:none;">Topography</span>
+                        <span class="lang-en" style="display:none;">Geography of risk</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>Oamenii nu trăiesc în izolare, ci în rețele de legături și întâlniri sociale care le
-                                influențează sănătatea de zi cu zi. Harta nu arată doar străzi și cartiere, ci și trasee
-                                invizibile prin care se transmit comportamente, norme și obiceiuri. În anumite locuri -
-                                piețe, târguri, școli sau săli de sport - aceste legături devin mai intense și dau
-                                naștere așa-numitelor puncte fierbinți (hot spots). Aici, obiceiurile circulă asemenea
-                                informației: ceea ce face un individ poate fi rapid preluat de grup și, la rândul său,
-                                grupul poate influența individul. Unele practici au consecințe negative pentru sănătate,
-                                cum ar fi consumul de alcool, fumatul sau mesele bogate în grăsimi și zahăr. Altele,
-                                dimpotrivă, au un efect protector: activitatea fizică, alimentația echilibrată sau
-                                participarea la evenimente culturale și sportive.<br><br></p>
+                            <p>Pânza intitulată Geografia riscului ne arată că sănătatea nu se distribuie la
+                                întâmplare
+                                în localitate, ci formează puncte fierbinți; adică zone unde anumite comportamente
+                                prind
+                                rădăcină și se răspândesc de la o persoană la alta. Zonele roșii marchează locurile
+                                unde
+                                obiceiurile nesănătoase cum ar fi fumatul, băutul în exces, mâncarea cu conținut
+                                ridicat
+                                de sare, circulă prin comunitate asemenea unei infecții invizibile. Zonele verzi
+                                sunt
+                                sanctuarele de sănătate, spațiile sociale unde oamenii fac sport, mănâncă echilibrat
+                                și
+                                se influențează pozitiv între ei. Ceea ce vedem pe hartă nu sunt doar străzi și
+                                clădiri,
+                                ci trasee invizibile prin care se transmit obiceiurile de zi cu zi. Pentru prevenția
+                                cancerului, nu ajunge să le spunem oamenilor să se schimbe individual; trebuie să
+                                transformăm întregi spații din localitate din zone roșii în zone verzi, să creăm
+                                locuri
+                                unde sănătatea să devină contagioasă. Sălile de sport, școlile și piețele cu legume
+                                proaspete pot deveni noile puncte fierbinți, dar de data aceasta pentru obiceiuri
+                                care
+                                ne protejează, nu care ne îmbolnăvesc.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p>Factorii de risc, precum fumatul sau alimentația nesănătoasă, nu sunt doar obiceiuri
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Oamenii nu trăiesc în izolare, ci în rețele de legături și întâlniri sociale care
+                                    le
+                                    influențează sănătatea de zi cu zi. Harta nu arată doar străzi și cartiere, ci
+                                    și
+                                    trasee
+                                    invizibile prin care se transmit comportamente, norme și obiceiuri. În anumite
+                                    locuri -
+                                    piețe, târguri, școli sau săli de sport - aceste legături devin mai intense și
+                                    dau
+                                    naștere așa-numitelor puncte fierbinți (hot spots). Aici, obiceiurile circulă
+                                    asemenea
+                                    informației: ceea ce face un individ poate fi rapid preluat de grup și, la
+                                    rândul
+                                    său,
+                                    grupul poate influența individul. Unele practici au consecințe negative pentru
+                                    sănătate,
+                                    cum ar fi consumul de alcool, fumatul sau mesele bogate în grăsimi și zahăr.
+                                    Altele,
+                                    dimpotrivă, au un efect protector: activitatea fizică, alimentația echilibrată
+                                    sau
+                                    participarea la evenimente culturale și sportive.<br><br></p>
+                                <p>Factorii de risc, precum fumatul sau alimentația nesănătoasă, nu sunt doar
+                                    obiceiuri
                                     individuale, ci se organizează în rețele sociale de familie și prieteni și, în
                                     același
-                                    timp, în spații geografice precise. Unele locuri cultivă sănătatea: o sală de sport,
+                                    timp, în spații geografice precise. Unele locuri cultivă sănătatea: o sală de
+                                    sport,
                                     o
                                     școală, o curte unde copiii aleargă. Altele devin terenuri fertile pentru
                                     comportamente
                                     nesănătoase: un magazin care vinde tutun, o cârciumă, o stradă unde fumul sau
                                     poluarea
-                                    devine obișnuință. Prevenția primară a cancerului în zonele rurale trebuie să țină
+                                    devine obișnuință. Prevenția primară a cancerului în zonele rurale trebuie să
+                                    țină
                                     cont
                                     nu doar de felul în care aceste riscuri sunt transmise prin rețelele noastre
                                     sociale, ci
-                                    și de geografia lor, de locurile în care ele prind rădăcină și se repetă. A înțelege
-                                    harta socială și spațială a riscului înseamnă a putea construi punți spre obiceiuri
+                                    și de geografia lor, de locurile în care ele prind rădăcină și se repetă. A
+                                    înțelege
+                                    harta socială și spațială a riscului înseamnă a putea construi punți spre
+                                    obiceiuri
                                     mai
                                     sănătoase.<br><br></p>
 
                                 <p>Pânza intitulată Geografia riscului evidențiază diverse puncte fierbinți la nivel
-                                    comunitar. Unele dintre acestea favorizează comportamente sănătoase (zonele marcate
+                                    comunitar. Unele dintre acestea favorizează comportamente sănătoase (zonele
+                                    marcate
                                     cu
                                     verde), iar altele comportamente nesănătoase (zonele marcate cu roșu). Nodurile
-                                    portocalii reprezintă persoane cu obiceiuri dăunătoare, precum fumatul, consumul de
+                                    portocalii reprezintă persoane cu obiceiuri dăunătoare, precum fumatul, consumul
+                                    de
                                     alcool sau sedentarismul, în timp ce nodurile verzi indică persoane care adoptă
                                     comportamente sănătoase, cum ar fi practicarea activității fizice, evitarea
                                     alimentelor
-                                    cu conținut ridicat de sare sau absența fumatului. Circulația acestor comportamente,
+                                    cu conținut ridicat de sare sau absența fumatului. Circulația acestor
+                                    comportamente,
                                     fie
-                                    sănătoase, fie nesănătoase, nu are loc doar prin legăturile dintre indivizi, ci este
-                                    influențată și de spațiile în care aceștia trăiesc și interacționează.<br><br></p>
+                                    sănătoase, fie nesănătoase, nu are loc doar prin legăturile dintre indivizi, ci
+                                    este
+                                    influențată și de spațiile în care aceștia trăiesc și interacționează.<br><br>
+                                </p>
 
                                 <p>Din perspectiva prevenției primare a cancerului, această hartă socio-spațială
                                     dezvăluie
                                     cum riscul oncologic se distribuie geografic în funcție de concentrarea și
                                     interacțiunea
                                     factorilor determinanți. Zonele roșii intense semnalează ecosisteme de risc unde
-                                    expunerea multiplă (fumat + alcool + sedentarism + alimentație nesănătoasă) creează
+                                    expunerea multiplă (fumat + alcool + sedentarism + alimentație nesănătoasă)
+                                    creează
                                     un
                                     efect sinergic care amplifică probabilitatea dezvoltării cancerului. Invers,
                                     insulele
                                     verzi identifică sanctuare de sănătate - spații geografice și sociale care
                                     promovează
                                     comportamente protective și pot funcționa ca modele pentru restul comunității.
-                                    Densitatea și proximitatea nodurilor în aceste zone sugerează că intervențiile de
+                                    Densitatea și proximitatea nodurilor în aceste zone sugerează că intervențiile
+                                    de
                                     prevenție trebuie să fie contextuale și să țintească simultan atât spațiul fizic
                                     (prin
                                     amenajarea de zone verzi, restricționarea accesului la substanțe nocive), cât și
                                     dinamica socială (prin mobilizarea liderilor locali din zonele verzi pentru a
                                     influența
                                     zonele roșii). Această abordare geo-socială permite dezvoltarea de strategii de
-                                    prevenție care transformă geografia riscului într-o geografie a oportunității pentru
-                                    sănătate. În plus, trebuie să reținem că cetățenii cunosc locurile fierbinți și pot
+                                    prevenție care transformă geografia riscului într-o geografie a oportunității
+                                    pentru
+                                    sănătate. În plus, trebuie să reținem că cetățenii cunosc locurile fierbinți și
+                                    pot
                                     co-decide cum să le transforme, e.g., din spații de risc în spații de sănătate.
-                                    Implicarea lor face intervențiile contextuale: potrivite pentru străzile, piețele și
+                                    Implicarea lor face intervențiile contextuale: potrivite pentru străzile,
+                                    piețele și
                                     obiceiurile reale ale localității Lerești.<br><br></p>
 
                             </div>
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="topografie.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>
-                                People do not live in isolation, but in networks of ties and social encounters that
-                                shape their everyday health. A map does not show only streets and neighborhoods, but
-                                also the invisible routes through which behaviors, norms, and habits are
-                                transmitted. In certain places, such as markets, fairs, schools, or gyms, these ties
-                                intensify, giving rise to so-called hot spots. Here, habits circulate like
-                                information: what one individual does can quickly be adopted by the group, and in
-                                turn, the group can influence the individual. Some practices have negative health
-                                consequences, such as alcohol consumption, smoking, or meals high in fat and sugar.
-                                Others, on the contrary, are protective: physical activity, balanced nutrition, or
-                                participation in cultural and sporting events. <br><br></p>
+                            <p>The canvas titled Geography of risk shows that health is not randomly distributed in
+                                the
+                                community, but forms hot spots, i.e., areas where certain behaviors take root and
+                                spread
+                                from one person to another. Red zones mark places where unhealthy habits such as
+                                smoking, excessive drinking, or eating salty processed foods circulate through the
+                                community like an invisible infection. Green zones are health sanctuaries, social
+                                spaces
+                                where people exercise, eat balanced meals, and positively influence one another.
+                                What we
+                                see on the map are not just streets and spaces, but invisible pathways through which
+                                daily habits are transmitted. To prevent cancer, it is not enough to ask individuals
+                                to
+                                change on their own; we need to transform entire spaces in the community from red
+                                zones
+                                into green ones, creating places where health becomes contagious. Gyms, schools, and
+                                fresh produce markets can become the new hot spots; this time for habits that
+                                protect
+                                us, not those that make us ill.<br><br></p>
                             <div class="more-text" style="display:none;">
-                                <p> Risk factors such as smoking or unhealthy eating are not just individual habits but
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>
+                                    People do not live in isolation, but in networks of ties and social encounters
+                                    that
+                                    shape their everyday health. A map does not show only streets and neighborhoods,
+                                    but
+                                    also the invisible routes through which behaviors, norms, and habits are
+                                    transmitted. In certain places, such as markets, fairs, schools, or gyms, these
+                                    ties
+                                    intensify, giving rise to so-called hot spots. Here, habits circulate like
+                                    information: what one individual does can quickly be adopted by the group, and
+                                    in
+                                    turn, the group can influence the individual. Some practices have negative
+                                    health
+                                    consequences, such as alcohol consumption, smoking, or meals high in fat and
+                                    sugar.
+                                    Others, on the contrary, are protective: physical activity, balanced nutrition,
+                                    or
+                                    participation in cultural and sporting events. <br><br></p>
+                                <p> Risk factors such as smoking or unhealthy eating are not just individual habits
+                                    but
                                     are
                                     organized within social networks of family and friends and, at the same time, in
                                     specific geographical spaces. Some places cultivate health: a gym, a school, a
                                     courtyard
-                                    where children play. Others become fertile ground for unhealthy behaviors: a tobacco
+                                    where children play. Others become fertile ground for unhealthy behaviors: a
+                                    tobacco
                                     shop, a bar, a street where smoke or pollution becomes the norm. Primary cancer
                                     prevention in rural areas must consider not only how these risks are transmitted
                                     through
-                                    our social networks but also their geography, the places where they take root and
+                                    our social networks but also their geography, the places where they take root
+                                    and
                                     repeat
                                     themselves. Understanding the social and spatial map of risk means being able to
                                     build
                                     bridges toward healthier habits.<br><br></p>
 
-                                <p>The canvas entitled Geography of risk highlights various community hot spots. Some
+                                <p>The canvas entitled Geography of risk highlights various community hot spots.
+                                    Some
                                     nurture healthy behaviors (green-marked areas), while others encourage unhealthy
                                     ones
-                                    (red-marked areas). Orange nodes represent individuals with harmful habits, such as
-                                    smoking, alcohol consumption, or sedentary lifestyles, while green nodes indicate
+                                    (red-marked areas). Orange nodes represent individuals with harmful habits, such
+                                    as
+                                    smoking, alcohol consumption, or sedentary lifestyles, while green nodes
+                                    indicate
                                     people
                                     adopting healthy behaviors, such as exercising, avoiding salty foods, or not
                                     smoking.
-                                    The circulation of these behaviors, whether healthy or unhealthy, occurs not only
+                                    The circulation of these behaviors, whether healthy or unhealthy, occurs not
+                                    only
                                     through ties between individuals but also through the spaces they inhabit and
                                     interact
                                     within.<br><br></p>
 
-                                <p>From the perspective of primary cancer prevention, this socio-spatial map reveals how
-                                    oncological risk is geographically distributed depending on the concentration and
+                                <p>From the perspective of primary cancer prevention, this socio-spatial map reveals
+                                    how
+                                    oncological risk is geographically distributed depending on the concentration
+                                    and
                                     interaction of determining factors. Intense red areas signal ecosystems of risk
                                     where
                                     multiple exposures (smoking + alcohol + sedentary lifestyle + unhealthy eating)
                                     create a
-                                    synergistic effect that amplifies cancer risk. Conversely, green islands identify
+                                    synergistic effect that amplifies cancer risk. Conversely, green islands
+                                    identify
                                     health
-                                    sanctuaries, i.e., geographical and social spaces that promote protective behaviors
+                                    sanctuaries, i.e., geographical and social spaces that promote protective
+                                    behaviors
                                     and
-                                    can serve as models for the wider community. The density and proximity of nodes in
+                                    can serve as models for the wider community. The density and proximity of nodes
+                                    in
                                     these
                                     zones suggest that prevention interventions must be contextual, targeting both
                                     physical
-                                    space (through the creation of green areas, limiting access to harmful substances)
+                                    space (through the creation of green areas, limiting access to harmful
+                                    substances)
                                     and
                                     social dynamics (by mobilizing local leaders from green zones to influence red
                                     ones).
-                                    This geo-social approach makes it possible to transform the geography of risk into a
-                                    geography of opportunity for health. Additionally, it should be noted that residents
-                                    know the hot spots and can co-decide how to transform them, e.g., from risk spaces
+                                    This geo-social approach makes it possible to transform the geography of risk
+                                    into a
+                                    geography of opportunity for health. Additionally, it should be noted that
+                                    residents
+                                    know the hot spots and can co-decide how to transform them, e.g., from risk
+                                    spaces
                                     into
-                                    health spaces. Their engagement makes interventions contextual, fitted to Lerești’s
+                                    health spaces. Their engagement makes interventions contextual, fitted to
+                                    Lerești’s
                                     actual streets, markets, and habits.<br><br></p>
 
                             </div>
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="topografie.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1599,36 +2184,68 @@
                 <div class="artwork-info">
                     <h3 class="artwork-title">
                         <span class="lang-ro">Alchimia ingredientelor</span>
-                        <span class="lang-en" style="display:none;">Expo Food</span>
+                        <span class="lang-en" style="display:none;">Alchemy of ingredients</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
-                            <p>Avem tendința să privim nutriția prin componente izolate, precum vitamine, proteine,
-                                carbohidrați. Însă bucătăria tradițională spune o altă poveste: una a conexiunilor, a
-                                contextului și a combinațiilor. Structura alimentației noastre este o rețea, iar
-                                înțelegerea ei ne poate schimba modul în care gândim o dietă echilibrată. Nu doar
-                                oamenii sunt legați prin relații durabile (prietenii, rudenii) sau prin legături mai
-                                fragile, cele cu simple cunoștințe. Și alimentele se leagă între ele, alcătuind rețele
-                                invizibile pe care le redescoperim la fiecare masă. Masa nu este doar un prilej de a
-                                observa cum interacționează oamenii, ci și o fereastră către felul în care ingredientele
-                                se întâlnesc și se completează. Pentru unii, micii la grătar vin mereu alături de pâine,
-                                muștar, cartofi prăjiți și bere. Pentru alții, micul dejun înseamnă combinația dintre
-                                brânzeturi, mezeluri și legume. Dacă vrem să înțelegem cum putem interveni asupra
-                                alimentației, trebuie să privim nu doar la cât sau când mănâncă oamenii, ci și la felul
-                                în care își asociază alimentele. Rețelele de ingrediente spun povești subtile despre
-                                cine suntem, despre obiceiurile noastre și despre sănătatea pe care o cultivăm sau o
-                                pierdem.<br><br></p>
+                            <p> Pânza cu numele Alchimia ingredientelor ne arată cum se conectează alimentele în
+                                bucătăria tradițională est-europeană. Fiecare punct colorat reprezintă un
+                                ingredient:
+                                verde pentru legume și fructe, portocaliu pentru carne și lactate, maro pentru
+                                cereale,
+                                galben pentru uleiuri, roșu pentru alcool. Liniile dintre ele ne spun care
+                                ingrediente
+                                se folosesc des împreună în rețete. Ceea ce vedem este că legumele (punctele verzi)
+                                sunt
+                                în centrul rețelei; ele se combină cu aproape toate celelalte ingrediente. <br><br>
+                            </p>
                             <div class="more-text" style="display:none;">
-                                <p>Pânza intitulată Alchimia ingredientelor prezintă 90 de ingrediente alimentare unice,
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Avem tendința să privim nutriția prin componente izolate, precum vitamine,
+                                    proteine,
+                                    carbohidrați. Însă bucătăria tradițională spune o altă poveste: una a
+                                    conexiunilor,
+                                    a
+                                    contextului și a combinațiilor. Structura alimentației noastre este o rețea, iar
+                                    înțelegerea ei ne poate schimba modul în care gândim o dietă echilibrată. Nu
+                                    doar
+                                    oamenii sunt legați prin relații durabile (prietenii, rudenii) sau prin legături
+                                    mai
+                                    fragile, cele cu simple cunoștințe. Și alimentele se leagă între ele, alcătuind
+                                    rețele
+                                    invizibile pe care le redescoperim la fiecare masă. Masa nu este doar un prilej
+                                    de a
+                                    observa cum interacționează oamenii, ci și o fereastră către felul în care
+                                    ingredientele
+                                    se întâlnesc și se completează. Pentru unii, micii la grătar vin mereu alături
+                                    de
+                                    pâine,
+                                    muștar, cartofi prăjiți și bere. Pentru alții, micul dejun înseamnă combinația
+                                    dintre
+                                    brânzeturi, mezeluri și legume. Dacă vrem să înțelegem cum putem interveni
+                                    asupra
+                                    alimentației, trebuie să privim nu doar la cât sau când mănâncă oamenii, ci și
+                                    la
+                                    felul
+                                    în care își asociază alimentele. Rețelele de ingrediente spun povești subtile
+                                    despre
+                                    cine suntem, despre obiceiurile noastre și despre sănătatea pe care o cultivăm
+                                    sau o
+                                    pierdem.<br><br></p>
+                                <p>Pânza intitulată Alchimia ingredientelor prezintă 90 de ingrediente alimentare
+                                    unice,
                                     reprezentate ca noduri conectate prin 710 legături. Această rețea de ingrediente
                                     este
                                     construită pe baza a peste 300 de rețete din Europa de Est, în care o conexiune
                                     apare
                                     doar atunci când două ingrediente au fost folosite împreună în cel puțin patru
                                     rețete
-                                    diferite. Datele provin din studiul publicat de Yong-Yeol Ahn și colegii în 2011 în
+                                    diferite. Datele provin din studiul publicat de Yong-Yeol Ahn și colegii în 2011
+                                    în
                                     Scientific Reports. Nodurile verzi reprezintă alimente de origine vegetală, cele
-                                    portocalii produse de origine animală, cele maronii cereale și produse pe bază de
+                                    portocalii produse de origine animală, cele maronii cereale și produse pe bază
+                                    de
                                     cereale, cele galbene uleiuri și grăsimi, iar cele roșii băuturi alcoolice.
                                     Rezultatul
                                     dezvăluie parteneriatele culinare cele mai frecvente și scoate la lumină
@@ -1640,22 +2257,30 @@
                                     centrul
                                     rețelei se află ingredientele de bază, versatile, e.g., cartofii, rădăcinoasele,
                                     făina
-                                    și ouăle, care susțin întreaga cultură culinară. În jurul lor se organizează alte
+                                    și ouăle, care susțin întreaga cultură culinară. În jurul lor se organizează
+                                    alte
                                     ingrediente, formând o arhitectură a gustului în care echilibrul nu este o listă
                                     rigidă
-                                    de reguli, ci o structură coerentă, bine conectată. O masă echilibrată seamănă cu un
+                                    de reguli, ci o structură coerentă, bine conectată. O masă echilibrată seamănă
+                                    cu un
                                     grup stabil din rețeaua culinară: un nucleu de carbohidrați (pâine sau cartofi),
                                     legat
-                                    de o sursă de proteine și completat de vitamine și minerale aduse de legume.<br><br>
+                                    de o sursă de proteine și completat de vitamine și minerale aduse de
+                                    legume.<br><br>
                                 </p>
 
-                                <p>Lecția pe care o transmite Alchimia ingredientelor este că tradițiile culinare poartă
+                                <p>Lecția pe care o transmite Alchimia ingredientelor este că tradițiile culinare
+                                    poartă
                                     în
-                                    ele o înțelepciune nativă. Ele sunt sisteme create pentru a oferi mese hrănitoare și
-                                    satisfăcătoare din ingredientele disponibile. În loc să privim alimentația sănătoasă
+                                    ele o înțelepciune nativă. Ele sunt sisteme create pentru a oferi mese
+                                    hrănitoare și
+                                    satisfăcătoare din ingredientele disponibile. În loc să privim alimentația
+                                    sănătoasă
                                     ca
-                                    pe un set de interdicții, o putem înțelege ca pe un act de conexiune: o gramatică a
-                                    hranei care ne învață să construim mese nu doar echilibrate după standarde moderne,
+                                    pe un set de interdicții, o putem înțelege ca pe un act de conexiune: o
+                                    gramatică a
+                                    hranei care ne învață să construim mese nu doar echilibrate după standarde
+                                    moderne,
                                     ci
                                     și bogate în istorie și cultură.<br><br>
                                 </p>
@@ -1663,28 +2288,33 @@
                                 <p>Pentru prevenția primară a cancerului, această rețea culinară dezvăluie cum
 
                                     combinațiile
-                                    tradiționale de ingrediente pot deveni instrumente naturale de protecție oncologică.
+                                    tradiționale de ingrediente pot deveni instrumente naturale de protecție
+                                    oncologică.
                                     Predominanța nodurilor verzi în centrul rețelei confirmă rolul protector al
                                     alimentelor
                                     de origine vegetală, bogate în antioxidanți, fibre și fitochimicale care reduc
                                     riscul de
                                     cancer. Conexiunile dense dintre cereale integrale (nodurile maronii), legume
                                     (verde) și
-                                    uleiuri sănătoase (galben) ilustrează structura unei diete protective care nu este
+                                    uleiuri sănătoase (galben) ilustrează structura unei diete protective care nu
+                                    este
                                     impusă artificial, ci derivă din înțelepciunea culinară acumulată. Pozițiile
                                     periferice
-                                    ale băuturilor alcoolice (roșu) și conectivitatea lor redusă sugerează că tradițiile
+                                    ale băuturilor alcoolice (roșu) și conectivitatea lor redusă sugerează că
+                                    tradițiile
                                     culinare intuiesc limitele consumului de alcool. Această perspectivă permite
                                     dezvoltarea
                                     de intervenții nutriționale care nu combat cultura alimentară locală, ci o
                                     valorifică și
                                     o rafinează, transformând rețelele culinare existente în ecosisteme de prevenție
                                     care
-                                    reduc riscul de cancer prin plăcerea și continuitatea culturală, nu prin restricții.
+                                    reduc riscul de cancer prin plăcerea și continuitatea culturală, nu prin
+                                    restricții.
                                     De
                                     asemenea, rețetele comunității sunt un patrimoniu viu; implicarea cetățenilor
                                     permite
-                                    ajustări mici, acceptabile cultural, cu impact mare asupra sănătății. Co-crearea de
+                                    ajustări mici, acceptabile cultural, cu impact mare asupra sănătății. Co-crearea
+                                    de
                                     meniuri și ateliere cu localnicii transformă tradiția într-un aliat al
                                     prevenției.<br><br></p>
 
@@ -1692,36 +2322,64 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Afișează mai mult</button>
                                 <a href="food_network.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-ro">Pictură calitate întregă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
                                 </a>
                             </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
-                            <p>We tend to view nutrition through isolated components such as vitamins, proteins,
-                                carbohydrates. Yet traditional cuisine tells a different story: one of connections,
-                                context, and combinations. The structure of our food is a network, and understanding it
-                                can change how we think about a balanced diet. Not only people are linked by durable
-                                relationships, such as friendship, kinship, or by weaker ties with acquaintances. Foods,
-                                too, are connected, forming invisible networks rediscovered at every meal. A meal is not
-                                only a moment to observe how people interact, but also a window into how ingredients
-                                meet and complement one another. For some, grilled minced meat rolls always come with
-                                bread, mustard, fries, and beer. For others, breakfast means the combination of cheeses,
-                                cold cuts, and vegetables. To understand how we might intervene in eating habits, we
-                                must look not only at how much or when people eat, but also at how they associate foods.
-                                Ingredient networks tell subtle stories about who we are, our habits, and the health we
-                                cultivate or lose.<br><br></p>
+                            <p>The painting titled Alchemy of ingredients shows how foods connect within traditional
+                                Eastern European cuisine. Each colored dot represents an ingredient: green for
+                                vegetables and fruits, orange for meat and dairy, brown for grains, yellow for oils, and
+                                red for alcohol. The lines between them indicate ingredients that are frequently used
+                                together in recipes. What we see is that vegetables (the green dots) sit at the center
+                                of the network, combining with almost all the other ingredients.<br><br></p>
                             <div class="more-text" style="display:none;">
+                                <hr
+                                    style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>We tend to view nutrition through isolated components such as vitamins, proteins,
+                                    carbohydrates. Yet traditional cuisine tells a different story: one of
+                                    connections,
+                                    context, and combinations. The structure of our food is a network, and
+                                    understanding
+                                    it
+                                    can change how we think about a balanced diet. Not only people are linked by
+                                    durable
+                                    relationships, such as friendship, kinship, or by weaker ties with
+                                    acquaintances.
+                                    Foods,
+                                    too, are connected, forming invisible networks rediscovered at every meal. A
+                                    meal is
+                                    not
+                                    only a moment to observe how people interact, but also a window into how
+                                    ingredients
+                                    meet and complement one another. For some, grilled minced meat rolls always come
+                                    with
+                                    bread, mustard, fries, and beer. For others, breakfast means the combination of
+                                    cheeses,
+                                    cold cuts, and vegetables. To understand how we might intervene in eating
+                                    habits, we
+                                    must look not only at how much or when people eat, but also at how they
+                                    associate
+                                    foods.
+                                    Ingredient networks tell subtle stories about who we are, our habits, and the
+                                    health
+                                    we
+                                    cultivate or lose.<br><br></p>
                                 <p>The canvas entitled Alchemy of ingredients presents 90 unique food ingredients,
                                     represented as nodes connected by 710 ties. This network of ingredients is built
                                     from
                                     over 300 Eastern European recipes, where a connection appears only when two
                                     ingredients
-                                    have been used together in at least four different recipes. The data come from the
+                                    have been used together in at least four different recipes. The data come from
+                                    the
                                     study
-                                    published by Yong-Yeol Ahn and colleagues in Scientific Reports (2011). Green nodes
-                                    represent plant-based foods, orange nodes animal products, brown nodes cereals and
-                                    grain-based foods, yellow nodes oils and fats, and red nodes alcoholic beverages.
+                                    published by Yong-Yeol Ahn and colleagues in Scientific Reports (2011). Green
+                                    nodes
+                                    represent plant-based foods, orange nodes animal products, brown nodes cereals
+                                    and
+                                    grain-based foods, yellow nodes oils and fats, and red nodes alcoholic
+                                    beverages.
                                     The
                                     result reveals the most frequent culinary partnerships and highlights our
                                     instinctive
@@ -1729,45 +2387,64 @@
 
                                 <p>Traditional cuisines, like those of Eastern Europe, have evolved over centuries
                                     through
-                                    successive refinements, arriving at a logical system of combinations. At the center
+                                    successive refinements, arriving at a logical system of combinations. At the
+                                    center
                                     of
-                                    the network are versatile staple ingredients (potatoes, root vegetables, flour, and
-                                    eggs) that sustain the entire food culture. Around them, other ingredients organize
-                                    themselves, forming an architecture of taste in which balance is not a rigid list of
-                                    rules but a coherent, well-connected structure. A balanced meal resembles a stable
-                                    cluster in the culinary network: a carbohydrate hub (bread or potatoes), linked to a
-                                    protein source, and complemented by vitamins and minerals from vegetables.<br><br>
+                                    the network are versatile staple ingredients (potatoes, root vegetables, flour,
+                                    and
+                                    eggs) that sustain the entire food culture. Around them, other ingredients
+                                    organize
+                                    themselves, forming an architecture of taste in which balance is not a rigid
+                                    list of
+                                    rules but a coherent, well-connected structure. A balanced meal resembles a
+                                    stable
+                                    cluster in the culinary network: a carbohydrate hub (bread or potatoes), linked
+                                    to a
+                                    protein source, and complemented by vitamins and minerals from
+                                    vegetables.<br><br>
                                 </p>
 
-                                <p>The lesson of Alchemy of ingredients is that culinary traditions carry within them an
-                                    innate wisdom. They are systems designed to provide nourishing and satisfying meals
-                                    from
-                                    available foods. Rather than seeing healthy eating as a set of prohibitions, we can
-                                    understand it as an act of connection: a grammar of food that teaches us to build
+                                <p>The lesson of Alchemy of ingredients is that culinary traditions carry within
+                                    them an
+                                    innate wisdom. They are systems designed to provide nourishing and satisfying
                                     meals
-                                    not only balanced by modern standards, but also rich in history and culture.<br><br>
+                                    from
+                                    available foods. Rather than seeing healthy eating as a set of prohibitions, we
+                                    can
+                                    understand it as an act of connection: a grammar of food that teaches us to
+                                    build
+                                    meals
+                                    not only balanced by modern standards, but also rich in history and
+                                    culture.<br><br>
                                 </p>
 
-                                <p>From the perspective of primary cancer prevention, this culinary network shows how
+                                <p>From the perspective of primary cancer prevention, this culinary network shows
+                                    how
                                     traditional ingredient combinations can serve as natural tools of oncological
                                     protection. The predominance of green nodes at the network’s core confirms the
                                     protective role of plant-based foods, rich in antioxidants, fiber, and
                                     phytochemicals
-                                    that reduce cancer risk. The dense connections between whole grains (brown nodes),
+                                    that reduce cancer risk. The dense connections between whole grains (brown
+                                    nodes),
                                     vegetables (green), and healthy oils (yellow) illustrate the structure of an
                                     anticancer
-                                    diet that is not artificially imposed but derived from accumulated culinary wisdom.
+                                    diet that is not artificially imposed but derived from accumulated culinary
+                                    wisdom.
                                     The
-                                    peripheral positions and low connectivity of alcoholic beverages (red) suggest that
-                                    traditional cuisines intuitively recognize the limits of alcohol consumption. This
+                                    peripheral positions and low connectivity of alcoholic beverages (red) suggest
+                                    that
+                                    traditional cuisines intuitively recognize the limits of alcohol consumption.
+                                    This
                                     perspective allows for the development of nutritional interventions that do not
                                     fight
                                     against local food culture but refine and valorize it, transforming existing
                                     culinary
                                     networks into preventive ecosystems that reduce cancer risk through pleasure and
-                                    cultural continuity, not through restrictions. Furthermore, a community’s recipes
+                                    cultural continuity, not through restrictions. Furthermore, a community’s
+                                    recipes
                                     are
-                                    living heritage; citizen engagement enables small, culturally acceptable tweaks with
+                                    living heritage; citizen engagement enables small, culturally acceptable tweaks
+                                    with
                                     significant health impact. Co-creating menus and workshops with locals turns
                                     tradition
                                     into an ally of prevention.<br><br></p>
@@ -1776,7 +2453,7 @@
                             <div class="button-group">
                                 <button class="show-more-btn">Show more</button>
                                 <a href="food_network.png" target="_blank" class="full-quality-btn">
-                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-ro" style="display:none;">Pictură calitate întregă</span>
                                     <span class="lang-en">Full Quality Painting</span>
                                 </a>
                             </div>
@@ -1794,17 +2471,47 @@
 
         <footer>
             <div class="contact-info">
-                <div class="lang-ro">
-                    <p><strong>4PCAN - Povești Digitale din Living Lab Lerești</strong></p>
-                    <p>Pentru mai multe informații:</p>
-                    <p><a href="https://4p-can.eu/ecosisteme-vii/" target="_blank">4p-can.eu/ecosisteme-vii</a></p>
-                    <p>Un eveniment despre comunitate, inovație și prevenție</p>
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="4PCAN_logo_slogan.png" alt="4PCAN Logo">
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="lang-ro">
+                            <p><strong>4P-CAN - Povești Digitale din Living Lab Lerești</strong></p>
+                            <p>Pentru mai multe informații:</p>
+                            <p><a href="https://4p-can.eu/ecosisteme-vii/" target="_blank">4p-can.eu/ecosisteme-vii</a>
+                            </p>
+                            <p>Un eveniment despre comunitate, inovație și prevenție</p>
+                        </div>
+                        <div class="lang-en" style="display:none;">
+                            <p><strong>4P-CAN - Digital Stories from Lerești Living Lab</strong></p>
+                            <p>For more information:</p>
+                            <p><a href="https://4p-can.eu/ecosisteme-vii/" target="_blank">4p-can.eu/ecosisteme-vii</a>
+                            </p>
+                            <p>An event about community, innovation and prevention</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="lang-en" style="display:none;">
-                    <p><strong>4PCAN - Digital Stories from Lerești Living Lab</strong></p>
-                    <p>For more information:</p>
-                    <p><a href="https://4p-can.eu/ecosisteme-vii/" target="_blank">4p-can.eu/ecosisteme-vii</a></p>
-                    <p>An event about community, innovation and prevention</p>
+                <div class="copyright">
+                    <div class="lang-ro">
+                        <p><small>Toate imaginile și textele de pe acest site sunt protejate de drepturile de autor
+                                și
+                                constituie proprietate privată a autorilor și partenerilor. Este interzisă copierea,
+                                descărcarea, redistribuirea, imprimarea sau realizarea de lucrări derivate fără
+                                acordul
+                                scris al deținătorilor de drepturi. Pentru licențiere, contactați office@ino-med.ro
+                                ©️2025 Centrul pentru Inovație în Medicină. Toate drepturile rezervate.</small></p>
+                    </div>
+                    <div class="lang-en" style="display:none;">
+                        <p><small>All images and texts on this site are protected by copyright and constitute the
+                                private property of the authors and partners. Copying, downloading, redistribution,
+                                printing, or creating derivative works is strictly prohibited without the written
+                                consent of the rights holders. For licensing inquiries, please contact
+                                office@ino-med.ro
+                                ©️2025 Center for Innovation in Medicine. All rights reserved.</small></p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -1834,10 +2541,18 @@
                     footerEn.style.display = lang === 'en' ? '' : 'none';
                 }
 
+                // Update copyright language
+                const copyrightRo = document.querySelector('.copyright .lang-ro');
+                const copyrightEn = document.querySelector('.copyright .lang-en');
+                if (copyrightRo && copyrightEn) {
+                    copyrightRo.style.display = lang === 'ro' ? '' : 'none';
+                    copyrightEn.style.display = lang === 'en' ? '' : 'none';
+                }
+
                 // Update artwork descriptions
                 document.querySelectorAll('.artwork-description-group').forEach(group => {
-                    const roDesc = group.querySelector('.lang-ro');
-                    const enDesc = group.querySelector('.lang-en');
+                    const roDesc = group.querySelector('.artwork-description.lang-ro');
+                    const enDesc = group.querySelector('.artwork-description.lang-en');
                     if (roDesc && enDesc) {
                         roDesc.style.display = lang === 'ro' ? '' : 'none';
                         enDesc.style.display = lang === 'en' ? '' : 'none';
