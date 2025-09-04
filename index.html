@@ -74,6 +74,42 @@
             color: #fff;
         }
 
+        .full-quality-btn {
+            margin-top: 12px;
+            margin-left: 12px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            border: 2px solid #FFC107;
+            background: #fff;
+            color: #FFC107;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            font-family: 'DM Sans', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .full-quality-btn:hover {
+            background: #FFC107;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .button-group {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .button-group .show-more-btn,
+        .button-group .full-quality-btn {
+            margin-top: 0;
+            margin-left: 0;
+        }
+
         html {
             scroll-behavior: smooth;
 
@@ -348,7 +384,7 @@
 
             .artwork-description {
                 color: #555;
-                line-height: 1.1;
+                line-height: 1.2;
                 font-size: 1rem;
             }
 
@@ -597,19 +633,19 @@
             <span id="lang-label-en" style="font-weight:normal;color:#2E5BBA;">Eng</span>
         </div>
         <div class="gallery-images" style="display:flex;gap:18px;align-items:center;padding-right:16px;">
-            <a href="#painting_community"><img src="community_cropped.png" alt="Community"
+            <a href="#painting_community"><img src="community_cropped.jpeg" alt="Community"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_link_tracing"><img src="link_tracing_cropped.png" alt="Link Tracing"
+            <a href="#painting_link_tracing"><img src="link_tracing_cropped.jpeg" alt="Link Tracing"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_covid"><img src="covid_cropped.png" alt="Covid"
+            <a href="#painting_covid"><img src="covid_cropped.jpeg" alt="Covid"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_nutrition"><img src="nutrition_cropped.png" alt="Nutrition"
+            <a href="#painting_nutrition"><img src="nutrition_cropped.jpeg" alt="Nutrition"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_smoking"><img src="smoking_cropped.png" alt="Smoking"
+            <a href="#painting_smoking"><img src="smoking_cropped.jpeg" alt="Smoking"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_topografie"><img src="topografie_cropped.png" alt="Topografie"
+            <a href="#painting_topografie"><img src="topografie_cropped.jpeg" alt="Topografie"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
-            <a href="#painting_food_network"><img src="food_network_cropped.png" alt="Food Network"
+            <a href="#painting_food_network"><img src="food_network_cropped.jpeg" alt="Food Network"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
         </div>
     </div>
@@ -652,7 +688,7 @@
         <div class="gallery">
             <div class="artwork" id="painting_community">
                 <div class="artwork-image">
-                    <img src="community.png" alt="Community" class="modal-trigger">
+                    <img src="community.jpeg" alt="Community" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -722,7 +758,13 @@
                                     comunității
                                     pentru implementarea eficientă a strategiilor de prevenție a cancerului.<br><br></p>
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="community.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>People naturally come together to form communities. In society, we all depend on one
@@ -786,14 +828,20 @@
                                     effectively.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="community.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_link_tracing">
                 <div class="artwork-image">
-                    <img src="link_tracing.png" alt="Link Tracing" class="modal-trigger">
+                    <img src="link_tracing.jpeg" alt="Link Tracing" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -867,7 +915,13 @@
                                     toți.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="link_tracing.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>Social relationships are present in every aspect of our lives, yet they remain
@@ -925,14 +979,20 @@
                                     everyone.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="link_tracing.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_covid">
                 <div class="artwork-image">
-                    <img src="covid.png" alt="Covid" class="modal-trigger">
+                    <img src="covid.jpeg" alt="Covid" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -992,7 +1052,13 @@
                                     personale.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="covid.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p> Vaccination decisions are not made in isolation, but in the heart of the family. Health
@@ -1047,14 +1113,20 @@
                                     of personal networks.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="covid.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_nutrition">
                 <div class="artwork-image">
-                    <img src="nutrition.png" alt="Nutrition" class="modal-trigger">
+                    <img src="nutrition.jpeg" alt="Nutrition" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -1124,7 +1196,13 @@
                                 </p>
 
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="nutrition.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>Food is not just an individual act, but a collective ritual. It functions as one of the
@@ -1176,14 +1254,20 @@
                                     and spreads healthy habits through group effects.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="nutrition.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_smoking">
                 <div class="artwork-image">
-                    <img src="smoking.png" alt="Smoking" class="modal-trigger">
+                    <img src="smoking.jpeg" alt="Smoking" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -1257,7 +1341,13 @@
                                     interiorul
                                     rețelelor, acolo unde tentația și sprijinul se joacă la distanțe scurte.<br><br></p>
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="smoking.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>Smoking is not just an individual gesture, but a social ritual that both connects and
@@ -1326,14 +1416,20 @@
                                     where temptation and support operate over short distances.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="smoking.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_topografie">
                 <div class="artwork-image">
-                    <img src="topografie.png" alt="Topografie" class="modal-trigger">
+                    <img src="topografie.jpeg" alt="Topografie" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -1410,7 +1506,13 @@
                                     obiceiurile reale ale localității Lerești.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="topografie.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>
@@ -1479,14 +1581,20 @@
                                     actual streets, markets, and habits.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="topografie.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="artwork" id="painting_food_network">
                 <div class="artwork-image">
-                    <img src="food_network.png" alt="Expo Food" class="modal-trigger">
+                    <img src="food_network.jpeg" alt="Expo Food" class="modal-trigger">
                 </div>
                 <div class="artwork-info">
                     <h3 class="artwork-title">
@@ -1581,7 +1689,13 @@
                                     prevenției.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Afișează mai mult</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="food_network.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate completă</span>
+                                    <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="artwork-description lang-en" style="display:none;">
                             <p>We tend to view nutrition through isolated components such as vitamins, proteins,
@@ -1659,7 +1773,13 @@
                                     into an ally of prevention.<br><br></p>
 
                             </div>
-                            <button class="show-more-btn">Show more</button>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="food_network.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro" style="display:none;">Pictură calitate completă</span>
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1731,6 +1851,16 @@
                     if (roTitle && enTitle) {
                         roTitle.style.display = lang === 'ro' ? '' : 'none';
                         enTitle.style.display = lang === 'en' ? '' : 'none';
+                    }
+                });
+
+                // Update full quality button text
+                document.querySelectorAll('.full-quality-btn').forEach(btn => {
+                    const roSpan = btn.querySelector('.lang-ro');
+                    const enSpan = btn.querySelector('.lang-en');
+                    if (roSpan && enSpan) {
+                        roSpan.style.display = lang === 'ro' ? '' : 'none';
+                        enSpan.style.display = lang === 'en' ? '' : 'none';
                     }
                 });
 
