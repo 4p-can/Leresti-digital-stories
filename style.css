@@ -15,8 +15,62 @@
             bottom: 0;
             background-color: #e0e7ef;
             border-radius: 24px;
-            transition: .4s;
+            transition: 0.4s;
         }
+
+            /* Intro artwork spacing */
+            .intro-artwork {
+                margin-bottom: 40px;
+            }
+
+            /* Intro paragraph styling */
+            .intro-paragraph {
+                text-align: center;
+            }
+
+            .intro-paragraph p {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 1.1rem;
+                line-height: 1.2;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            /* Welcome part - prominent styling */
+            .welcome-part {
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #2E5BBA;
+            }
+
+            /* Description part - subtle styling */
+            .description-part {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 400;
+                color: #333333;
+            }
+
+            footer {
+                background: linear-gradient(
+                    135deg,
+                    rgba(46, 91, 186, 0.95),
+                    rgba(76, 175, 80, 0.95)
+                );
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 20px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                color: rgba(255, 255, 255, 0.9);
+                font-family: 'DM Sans', sans-serif;
+                padding: 20px;
+                margin: 30px 10px;
+                text-align: center;
+                line-height: 1.6;
+                transition: .4s;
+            }
 
         .switch .slider:before {
             position: absolute;
@@ -399,6 +453,48 @@
                 line-height: 1.2;
                 font-size: 1rem;
             }
+
+            /* Welcome message styling in artwork context */
+            .artwork .welcome-message {
+                background: none !important;
+                border: none !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+                margin-bottom: 20px !important;
+                box-shadow: none !important;
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .artwork .welcome-message p {
+                font-family: 'Nunito', sans-serif !important;
+                font-size: 1.4rem !important;
+                font-weight: 700 !important;
+                color: #2E5BBA !important;
+                text-shadow: none !important;
+                margin: 0 !important;
+                text-align: center !important;
+                line-height: 1.4 !important;
+            }
+
+            /* Intro artwork spacing */
+            .intro-artwork {
+                margin-bottom: 40px;
+            }
+
+            .description-text {
+                opacity: 0.9;
+                transition: opacity 0.3s ease;
+                text-align: center;
+            }
+
+            .description-text p {
+                text-align: center !important;
+                max-width: 800px;
+                margin: 0 auto !important;
+                line-height: 1.2;
+            }
+            
 
             footer {
                 text-align: center;
