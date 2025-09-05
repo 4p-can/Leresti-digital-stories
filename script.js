@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
             headerEn.style.display = lang === 'en' ? '' : 'none';
         }
 
+        // Update intro section language
+        const introRo = document.querySelector('.intro-artwork .lang-ro');
+        const introEn = document.querySelector('.intro-artwork .lang-en');
+        if (introRo && introEn) {
+            introRo.style.display = lang === 'ro' ? '' : 'none';
+            introEn.style.display = lang === 'en' ? '' : 'none';
+        }
+ 
         // Update footer language
         const footerRo = document.querySelector('footer .lang-ro');
         const footerEn = document.querySelector('footer .lang-en');
