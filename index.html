@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arta Rețelelor - 4P-CAN</title>
+    <title>The Art of Networks | Arta Rețelelor | L'Art des Réseaux - 4P-CAN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,12 +18,12 @@
     <div class="miniature-gallery"
         style="display:flex;gap:18px;justify-content:center;align-items:center;padding:10px 0 18px 0;background:rgba(255,255,255,0.97);position:fixed;bottom:0;left:0;width:100vw;z-index:1000;box-shadow:0 -2px 12px rgba(46,91,186,0.07);backdrop-filter:blur(2px);overflow-x:auto;overflow-y:hidden;">
         <div id="lang-toggle-wrap" style="display:flex;align-items:center;margin:0 12px 0 16px;gap:8px;flex-shrink:0;">
-            <span id="lang-label-ro" style="font-weight:bold;color:#2E5BBA;">Ro</span>
-            <label class="switch">
-                <input type="checkbox" id="lang-toggle" style="display:none;">
-                <span class="slider"></span>
-            </label>
-            <span id="lang-label-en" style="font-weight:normal;color:#2E5BBA;">Eng</span>
+            <label for="lang-select" style="font-weight:bold;color:#2E5BBA;">Lang</label>
+            <select id="lang-select" style="border:1px solid #2E5BBA;border-radius:8px;padding:4px 8px;color:#2E5BBA;background:#fff;font-weight:600;">
+                <option value="ro">Ro</option>
+                <option value="en" selected>Eng</option>
+                <option value="fr">Fr</option>
+            </select>
         </div>
         <div class="gallery-images" style="display:flex;gap:18px;align-items:center;padding-right:16px;">
             <a href="#painting_community"><img src="community_cropped.jpeg" alt="Community"
@@ -39,6 +39,10 @@
             <a href="#painting_topografie"><img src="topografie_cropped.jpeg" alt="Topografie"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
             <a href="#painting_food_network"><img src="food_network_cropped.jpeg" alt="Food Network"
+                    style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
+                <a href="#painting_households"><img src="Households.jpeg" alt="Households"
+                    style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
+                <a href="#painting_health_sanctuaries"><img src="HealthHeat.jpeg" alt="Health Sanctuaries"
                     style="width:60px;height:44px;object-fit:cover;border-radius:8px;border:2px solid #2E5BBA;box-shadow:0 2px 8px #ccc;cursor:pointer;flex-shrink:0;"></a>
         </div>
     </div>
@@ -62,6 +66,14 @@
                     </div>
                 </div>
             </div>
+            <div class="lang-fr" style="display:none;">
+                <div class="header-content">
+                    <div class="header-left">
+                        <h1>L'ART DES RÉSEAUX</h1>
+                        <p class="subtitle">Comment les citoyens, la communauté et les données transforment le paradigme de la <br>prévention primaire du cancer</p>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- Introduction Section as Artwork-style -->
@@ -77,6 +89,11 @@
                         <p><span class="welcome-part">Welcome to the Painting Gallery <em>The Art of Networks: How Citizens, Community, and Data Transform the Paradigm of Primary Cancer Prevention</em>.</span> <br> <span class="description-part">This is a space where art, community, and research come together. Here you will find visualizations that explore social ties, health, and everyday life, presented as visual stories with immersive potential. The visualizations are based on real empirical data collected from the citizens of Lerești (Argeș) within the 4P-CAN project. Each canvas is accompanied by a presentation that provides both context and technical information.</span></p>
                     </div>
                 </div>
+                <div class="lang-fr" style="display:none;">
+                    <div class="intro-paragraph">
+                        <p><span class="welcome-part">Bienvenue dans la galerie de tableaux <em>L'Art des réseaux : comment les citoyens, la communauté et les données transforment le paradigme de la prévention primaire du cancer</em>.</span> <br> <span class="description-part">C'est un espace où l'art, la communauté et la recherche se rencontrent. Vous y trouverez des visualisations qui explorent les liens sociaux, la santé et la vie quotidienne, présentées comme des récits visuels à potentiel immersif. Les visualisations sont fondées sur des données empiriques réelles recueillies auprès des citoyens de Lerești (Argeș) dans le cadre du projet 4P-CAN. Chaque tableau est accompagné d'une présentation qui fournit à la fois le contexte et les informations techniques.</span></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -89,6 +106,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Textura comunității</span>
                         <span class="lang-en" style="display:none;">Community Texture</span>
+                        <span class="lang-fr" style="display:none;">Texture Communautaire</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -177,6 +195,7 @@
                                 <a href="community.png" target="_blank" class="full-quality-btn">
                                     <span class="lang-ro">Pictură calitate întreagă</span>
                                     <span class="lang-en" style="display:none;">Full Quality Painting</span>
+                                    <span class="lang-fr" style="display:none;">Peinture qualité complète</span>
                                 </a>
                             </div>
                         </div>
@@ -276,6 +295,25 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>L'image intitulée « Texture Communautaire » présente une partie du réseau social de Lerești, composé de 2 378 individus et 30 359 liens. Les nœuds orange représentent les citoyens qui ont participé directement aux entretiens, tandis que les nœuds bleus représentent les individus qu'ils ont mentionnés. La taille des nœuds indique le degré de connectivité : plus un individu a de relations au sein de ce réseau, plus sa capacité d'influence est grande. Cette toile montre comment la communauté fonctionne comme un tissu vivant de liens à travers lequel circulent l'information, le soutien et les habitudes. Du point de vue de la prévention primaire du cancer, l'engagement citoyen devient essentiel : lorsque les résidents sont co-auteurs des interventions, les messages de santé se propagent rapidement par les canaux naturels de la communauté, transformant cette carte sociale d'une simple représentation visuelle en une force motrice pour un changement collectif et durable.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Les gens se rassemblent naturellement pour former des communautés. Dans la société, nous dépendons tous les uns des autres. Lorsque nous renforçons l'esprit de communauté, nous améliorons la vie non seulement pour le groupe dans son ensemble, mais aussi pour chaque personne, en créant de plus grandes opportunités d'atteindre leur potentiel. Une société contient toujours de nombreux types de communautés différents qui coexistent en même temps. Nous vivons tous au sein d'une toile de relations sociales : certaines que nous choisissons, comme les habitants de Lerești qui choisissent leur compagnie mutuelle, tandis que d'autres sont façonnées par les circonstances, comme les Roumains qui partent travailler à l'étranger. Au sein de ce tissu invisible, la communauté joue un rôle vital dans la prévention primaire, et particulièrement dans la prévention primaire du cancer, car le pouvoir collectif de l'information, du soutien et de la solidarité peut transformer les intentions individuelles en habitudes saines et durables.<br><br></p>
+
+                                <p>La toile intitulée « Texture Communautaire » illustre un réseau de type « boule de poils » (nœuds et lignes) comprenant 2 378 individus (nœuds) et 30 359 relations sociales (liens) de diverses natures. Les nœuds de couleur orange représentent 122 citoyens de Lerești qui ont participé à au moins un entretien dans le cadre de l'étude longitudinale sur les réseaux personnels. Cette recherche fait partie des activités du living lab de Lerești développé dans le cadre du projet 4P-CAN. Les nœuds de couleur bleue représentent les individus mentionnés par les participants à l'étude. En d'autres termes, à travers 266 entretiens menés en trois vagues, 122 personnes ont fourni des informations sur 59 % des résidents de Lerești âgés de 18 ans et plus. La taille de chaque nœud est directement proportionnelle au nombre de liens que cette personne possède au sein du réseau. Les liens de couleur orange marquent les relations entre les participants à l'étude ou entre les participants et les personnes qu'ils ont mentionnées. Les liens bleus représentent les connexions entre les individus mentionnés par les participants. En bref, « Texture Communautaire » est une image construite à partir de données réelles collectées auprès des résidents de Lerești (Argeș).<br><br></p>
+
+                                <p>L'engagement citoyen est la clé pour activer les liens affichés sur cette toile : lorsque les résidents co-créent des interventions, l'information et le soutien circulent plus rapidement par les canaux naturels de la communauté. Leur participation transforme le réseau d'une simple carte en un moteur durable de changement sain.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire, cette toile met en évidence les canaux par lesquels l'information et les comportements liés à la santé peuvent être diffusés efficacement. Les nœuds hautement connectés (représentés par une taille plus grande) agissent comme des influenceurs naturels, c'est-à-dire des individus qui, par leur position centrale dans la communauté, peuvent amplifier les messages de santé et catalyser l'adoption de comportements préventifs. La densité des liens indique le potentiel du soutien social à maintenir les changements de mode de vie, tandis que la diversité des types de relations suggère de multiples voies pour transmettre les connaissances et fournir le soutien émotionnel nécessaire pour maintenir des comportements sains sur le long terme. Comprendre cette architecture sociale permet de développer des interventions ciblées qui tirent parti de l'influence naturelle des leaders d'opinion locaux et de la solidarité de la communauté pour mettre en œuvre plus efficacement les stratégies de prévention du cancer.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="community.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,6 +325,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Articulații în lumină</span>
                         <span class="lang-en" style="display:none;">Reveal the hidden</span>
+                        <span class="lang-fr" style="display:none;">Révéler ce qui est caché</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -501,6 +540,23 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile Révéler ce qui est caché présente l'architecture cachée des liens sociaux, rendant visibles les fils invisibles qui relient les gens dans la vie quotidienne. Chaque nœud lumineux représente des points de départ, ou graines, à partir desquels les relations se ramifient dans la communauté plus large de Lerești. Les lignes vibrantes bleues, orange et jaunes tracent des voies d'interaction, montrant comment les individus sont liés par les familles, les amitiés et les réseaux locaux. Ce qui pourrait ressembler à une constellation est, en fait, une carte vivante de connexions : un rappel que les comportements de santé et les connaissances voyagent à travers ces liens tout comme la lumière voyage à travers l'espace. Pour la prévention du cancer, cette visualisation démontre qu'atteindre les individus signifie également atteindre leurs réseaux. Des ambassadeurs de la santé soigneusement choisis, légitimés et soutenus par la communauté, peuvent déclencher de nouvelles voies d'influence, transformant les connexions locales en canaux puissants pour la diffusion d'habitudes protectrices. En engageant directement les citoyens, ces jointures de lumière transforment les liens invisibles en voies actives pour la santé, la solidarité et un changement à long terme.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Les relations sociales sont présentes dans chaque aspect de nos vies, pourtant elles restent invisibles à l'œil nu. Nous évoluons dans le monde entourés de liens qui nous connectent à la famille, aux amis, aux collègues et même à des étrangers, mais ces fils restent cachés jusqu'à ce qu'ils soient révélés. Lorsqu'ils sont rendus visibles, ils illustrent la beauté des mécanismes sociaux : notre capacité à mobiliser des ressources, à nous soutenir mutuellement et à atteindre des cercles sociaux éloignés par des chemins étonnamment courts. Ce qui reste invisible dans la vie quotidienne devient, une fois visualisé, une carte vivante de la connexion humaine. Au sein de ce tissu de liens sociaux, les réseaux personnels, la famille et la communauté deviennent des alliés essentiels dans la prévention primaire du cancer, grâce au pouvoir collectif de maintenir des habitudes saines et de diffuser les connaissances et le soutien.<br><br></p>
+
+                                <p>La toile intitulée Révéler ce qui est caché, sous une forme stylisée, présente une méthode d'échantillonnage de réseau social au sein de la communauté de Lerești. Le réseau visualisé comprend 261 individus et 298 liens uniques. Le processus d'échantillonnage a commencé avec six points indépendants (graines), représentés en jaune électrique activé (graines ayant participé à l'étude) et en rouge électrique activé (une graine n'ayant pas participé à l'étude). Les liens, montrés dans des teintes électriques (orange, jaune, bleu cyan), indiquent différentes propriétés structurelles du réseau. Parmi les 261 individus, 122 ont participé à au moins un entretien à travers les trois vagues, 4 n'ont pas pu être joints, 12 étaient indisponibles, 5 ont refusé, et 118 — bien que mentionnés — n'ont pas été contactés par l'équipe de recherche. En d'autres termes, Révéler ce qui est caché présente de véritables données de terrain de la communauté de Lerești (Argeș), collectées dans le cadre d'une étude longitudinale sur les réseaux personnels soutenue par le projet 4P-CAN.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire, cette visualisation démontre comment le capital social d'une communauté peut être accessible et mobilisé grâce à des approches stratégiques. Les points de départ (graines) illustrent l'importance de sélectionner soigneusement les ambassadeurs de la santé, c'est-à-dire les individus qui peuvent devenir des vecteurs naturels pour diffuser l'information préventive et promouvoir des comportements sains. Les différentes nuances de liens révèlent la diversité des canaux de communication et d'influence, suggérant que les messages de prévention peuvent être adaptés et transmis à travers de multiples voies sociales. La participation variable (de l'acceptation au refus) reflète les réalités de la mise en œuvre d'interventions communautaires, soulignant la nécessité de stratégies sur mesure qui respectent les dynamiques sociales locales. Cette carte de connexions fournit un cadre pratique pour le développement de programmes de prévention qui utilisent les forces sociales existantes, transformant les réseaux de relations naturels en instruments efficaces pour la promotion de la santé et la prévention du cancer. De plus, il convient de souligner que les graines ne fonctionnent que lorsqu'elles sont sélectionnées et soutenues avec la communauté. L'engagement citoyen légitime les ambassadeurs de la santé, renforce la confiance et étend rapidement les chemins par lesquels les messages de prévention parviennent à tous.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="link_tracing.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -512,6 +568,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Picătura de viață</span>
                         <span class="lang-en" style="display:none;">Inoculation</span>
+                        <span class="lang-fr" style="display:none;">Inoculation</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -707,6 +764,23 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile Inoculation rassemble 82 égo-grammes qui montrent comment les décisions de vaccination prennent forme au sein des cercles restreints de la famille et des amis. Chaque diagramme décrit les liens émotionnels les plus forts d'un répondant de Lerești : la moitié orange indique les personnes extérieures au foyer, tandis que la moitié jaune clair montre celles qui se trouvent à l'intérieur. Les nœuds rouges représentent les individus perçus comme non vaccinés, tandis que les nœuds bleus représentent les individus vaccinés, reliés par des liens rouges (très proches) ou des liens bleus (proximité plus faible). Vues ensemble, les images révèlent que les décisions de santé ne se produisent pas au hasard, mais se regroupent au sein d'îlots familiaux et sociaux, où les comportements ont tendance à être partagés. Cette visualisation met en évidence un principe essentiel : la santé se propage par la proximité émotionnelle, et pas seulement par l'information. C'est pourquoi une prévention efficace, que ce soit pour la vaccination ou la réduction du risque de cancer, nécessite l'implication des familles et des communautés. Lorsque les voix des citoyens sont intégrées et que les liens étroits sont mobilisés, les messages de santé gagnent en poids et font partie de la réalité quotidienne.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Les décisions de vaccination ne se prennent pas de manière isolée, mais au cœur de la famille. Les valeurs de santé sont des fils invisibles, tissés et négociés entre les personnes importantes de nos vies. C'est pourquoi les choix pro- ou anti-vaccination ne s'éparpillent pas au hasard dans la société, mais se rassemblent en îlots et en constellations de liens. Les interventions liées à la vaccination doivent s'adresser non seulement à l'individu, mais aussi au tissu plus large de la famille et des réseaux proches.<br><br></p>
+
+                                <p>La toile intitulée Inoculation rassemble 82 égo-grammes (images). Chaque image montre les contacts sociaux émotionnels les plus proches d'une personne et la manière dont le comportement de vaccination s'organise au sein des cercles sociaux. En d'autres termes, chaque égo-gramme correspond à l'un des 82 répondants interrogés lors de la première vague de l'étude longitudinale sur les réseaux sociaux. Chaque camembert est divisé en deux : la moitié orange représente les personnes extérieures au foyer, tandis que la moitié jaune clair représente les personnes au sein du foyer du répondant. Les nœuds rouges marquent les individus que le répondant pense ne pas être vaccinés, tandis que les nœuds bleus représentent les individus connus pour être vaccinés. Les liens rouges relient les personnes considérées comme très proches, tandis que les liens bleus indiquent une proximité plus faible. Vues ensemble, les 82 images révèlent des modèles de perception ; par exemple, la tendance des membres d'un même foyer à être signalés comme ayant le même comportement de vaccination. La toile Inoculation représente un collage de données réelles collectées dans la communauté de Lerești (Argeș) au cours de la première vague de l'étude longitudinale sur les réseaux personnels menée dans le cadre du projet 4P-CAN.<br><br></p>
+
+                                <p>Pour la prévention primaire du cancer, cette collection de réseaux personnels illustre le principe fondamental selon lequel les comportements de santé se propagent par la proximité émotionnelle, et non par la simple information. Les modèles de regroupement observés dans les décisions de vaccination s'appliquent également aux comportements de prévention du cancer, par exemple, de l'adoption d'une alimentation saine et de l'arrêt du tabac jusqu'à la participation à des dépistages réguliers. L'intensité des liens (rouge contre bleu) suggère que ceux avec qui nous partageons les relations les plus étroites exercent une influence disproportionnée sur nos choix de santé. L'organisation des comportements en groupes familiaux et sociaux indique que les interventions de prévention primaire du cancer doivent cibler non seulement l'individu, mais aussi l'écosystème relationnel dans lequel les décisions sont prises. Cette perspective permet le développement de stratégies qui mobilisent l'influence positive des réseaux proches pour soutenir et renforcer l'adoption à long terme de modes de vie qui réduisent le risque de cancer. De plus, comme les décisions sont prises au sein des familles et des cercles proches, les interventions réussissent lorsqu'elles impliquent notre entourage, nos parents, nos grands-parents et nos amis. Les voix des citoyens nuancent les messages et les ancrent dans la réalité émotionnelle des réseaux personnels.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="covid.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -718,6 +792,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Galaxia nutriției</span>
                         <span class="lang-en" style="display:none;">Nutrition panoply</span>
+                        <span class="lang-fr" style="display:none;">Panoplie nutritionnelle</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -922,6 +997,25 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile intitulée Panoplie nutritionnelle montre comment les habitudes alimentaires sont profondément ancrées dans le tissu social de la vie quotidienne. Chaque réseau représente les contacts sociaux proches d'un répondant de Lerești, avec des nœuds orange pour les personnes qui consomment fréquemment des aliments transformés salés et des nœuds bleus pour celles qui en consomment moins souvent. Ce que nous voyons ne sont pas seulement des choix individuels, mais la façon dont les comportements alimentaires se regroupent et se propagent au sein des familles et des cercles d'amis. Les réseaux dominés par l'orange révèlent des environnements où les régimes alimentaires malsains sont normalisés et renforcés, tandis que les réseaux à prédominance bleue mettent en évidence des contextes plus sains. Les réseaux mixtes révèlent à la fois des tensions et des opportunités, où une influence positive peut catalyser un changement vers des régimes plus protecteurs. Du point de vue de la prévention du cancer, l'image nous rappelle que le changement nutritionnel n'est pas seulement une question individuelle mais collective, qui nécessite l'engagement des citoyens. En collaborant avec des groupes qui partagent des repas et des habitudes quotidiennes, les communautés peuvent transformer la table partagée en un espace de changement, où les pratiques saines s'enracinent et se propagent grâce au pouvoir des liens sociaux.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>L'alimentation n'est pas seulement un acte individuel, mais un rituel collectif. Elle fonctionne comme l'une des institutions sociales les plus fortes : rassemblant les gens, jetant des ponts de confiance et tissant des fils subtils d'intimité. Autour de la table, les gens s'influencent mutuellement, partagent des secrets et, au fil du temps, en viennent à partager des habitudes alimentaires communes et durables. Les goûts se transmettent, se mélangent et s'empruntent jusqu'à devenir un héritage partagé entre amis et familles. C'est pourquoi changer la façon dont une personne mange signifie inévitablement changer la façon dont ses amis et ses proches mangent également. Toute intervention, par exemple, qu'elle vise à réduire l'apport en sel ou à adopter d'autres pratiques saines, doit s'adresser non seulement à l'individu, mais aussi à la communauté proche dans laquelle il est inséré.<br><br></p>
+
+                                <p>Les systèmes de restauration collective, tels que les cantines scolaires ou d'entreprise, sont particulièrement importants pour cette même raison. Tout changement dans le menu d'une cantine peut se propager rapidement au sein de la communauté de ceux qui y mangent et s'étendre à leurs réseaux familiaux ou amicaux. À long terme, ces changements peuvent s'avérer bien plus efficaces que n'importe quelle campagne individuelle d'information ou d'éducation. Les réseaux familiaux et amicaux offrent à toute stratégie de promotion de l'alimentation saine une opportunité unique de transformation sociale et, en fin de compte, de transformation de la santé de la population.<br><br></p>
+
+                                <p>La toile intitulée Panoplie nutritionnelle présente l'histoire visuelle de 83 répondants de la première vague de l'étude longitudinale sur les réseaux personnels menée dans la communauté de Lerești (Argeș), dans le cadre du projet 4P-CAN. Chaque réseau montre comment les contacts sociaux des répondants interagissent, les liens représentant un degré élevé de proximité émotionnelle perçue. Les nœuds orange indiquent les personnes qui consomment fréquemment (quotidiennement ou hebdomadairement) des aliments transformés riches en sel, tandis que les nœuds bleus indiquent celles qui consomment ces aliments plus rarement. Les réseaux sont disposés de la plus forte à la plus faible concentration de consommateurs d'aliments transformés. La toile met en évidence de forts effets de similarité : généralement, les répondants qui consomment fréquemment ces aliments sont entourés d'amis et de membres de leur famille ayant des habitudes similaires, bien que dans certains cas, des préférences alimentaires mixtes apparaissent également.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire du cancer, cette collection de réseaux illustre un principe fondamental : les habitudes alimentaires qui réduisent le risque de cancer sont renforcées et maintenues par des effets de groupe. La transition visuelle des réseaux à prédominance orange (forte consommation d'aliments transformés) aux réseaux bleus (faible consommation) suggère que le changement alimentaire n'est pas un processus individuel, mais un processus collectif qui se propage par la proximité sociale. Le regroupement des comportements alimentaires démontre que les interventions de nutrition préventive ont plus de chances de réussir lorsqu'elles ciblent des groupes sociaux cohésifs plutôt que des individus isolés. Les réseaux mixtes (orange-bleu) identifient des points de tension et d'opportunité, où une influence positive peut catalyser des changements vers des régimes riches en antioxydants, en fibres et en nutriments protecteurs. Cette perspective permet le développement de stratégies qui exploitent le pouvoir rituel du repas partagé pour promouvoir la nutrition en tant qu'outil de prévention du cancer au sein des familles et des communautés proches. De plus, le changement alimentaire s'enracine lorsqu'il est co-conçu avec les groupes qui mangent ensemble. L'engagement citoyen aide à identifier la table partagée comme un espace d'intervention et diffuse des habitudes saines grâce aux effets de groupe.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="nutrition.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -933,6 +1027,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Fire de fum</span>
                         <span class="lang-en" style="display:none;">Ties in smoke</span>
+                        <span class="lang-fr" style="display:none;">Liens dans la fumée</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -1178,6 +1273,25 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile intitulée Liens dans la fumée montre comment le tabagisme est profondément ancré dans le tissu social de la vie quotidienne. Chaque image représente les contacts proches d'un répondant de Lerești, organisés selon leur statut tabagique : rouge pour les fumeurs, bleu pour les anciens fumeurs et vert pour les non-fumeurs. Des lignes rouges relient les fumeurs aux autres groupes. Ce que nous voyons ne sont pas seulement des choix individuels isolés, mais la façon dont les comportements tabagiques circulent à travers les réseaux d'amis, de famille et de connaissances. Des groupes denses de liens rouges révèlent des environnements où le tabagisme est normalisé et renforcé. Là où les lignes rouges sont moins nombreuses ou absentes, nous pouvons nous attendre à des contextes dans lesquels le tabagisme est socialement plus isolé. Du point de vue de la prévention du cancer, ces modèles montrent que l'arrêt du tabac dépend non seulement de la volonté individuelle, mais aussi de l'influence collective. L'engagement des communautés (non-fumeurs, anciens fumeurs et leaders informels) crée des écosystèmes protecteurs où les normes saines se propagent, démontrant que les liens sociaux peuvent être de puissants alliés pour réduire les risques liés au tabac.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Fumer n'est pas seulement un geste individuel, mais un rituel social qui à la fois relie et divise. La cigarette allumée devient un prétexte de rencontre, de conversation, de solidarité entre amis ou collègues. La fumée trace des cercles invisibles d'appartenance, mais aussi des frontières entre ceux qui partagent cette habitude et ceux qui restent en dehors. Tout comme la flamme d'un briquet se partage, il en va de même pour les normes, les routines et parfois les dépendances. Changer le comportement tabagique d'une personne implique de toucher l'ensemble de son cercle d'amis et de ses liens. Toute intervention doit prendre en compte non seulement le fumeur individuel, mais aussi le réseau social qui entretient ou peut transformer cette habitude.<br><br></p>
+
+                                <p>La toile Liens dans la fumée présente une collection d'images de type hive-plot (graphique en ruche). Ces illustrations spéciales divisent, selon trois axes, les contacts proches de 83 répondants de la communauté de Lerești (Argeș), en fonction de leur statut tabagique. Les données ont été collectées lors de la première vague de l'étude longitudinale sur les réseaux personnels menée dans le cadre du projet 4P-CAN. Les fumeurs sont marqués en rouge, les anciens fumeurs en bleu, et les personnes dont les répondants savent qu'elles n'ont jamais fumé en vert. Au sein de chaque catégorie, les teintes plus foncées (rouge foncé, bleu foncé, vert foncé) identifient les hommes, tandis que les teintes plus claires représentent les femmes. Des lignes rouges relient les fumeurs aux non-fumeurs ou aux anciens fumeurs, tandis que des lignes blanches relient les non-fumeurs aux anciens fumeurs.<br><br></p>
+
+                                <p>Cette toile peut être lue comme une carte des risques. Dans presque la totalité des 83 réseaux personnels, les liens rouges soulignent l'exposition aux risques du tabagisme (comme le tabagisme passif). Les réseaux comportant de nombreux liens rouges peuvent indiquer des espaces sociaux où le tabagisme et les fumeurs rencontrent peu de résistance sociale. Les réseaux avec moins de liens rouges reflètent des contextes où le tabagisme a tendance à être socialement isolé. Les liens blancs soulignent les connexions entre les non-fumeurs et les anciens fumeurs, révélant des systèmes potentiels de soutien social pour arrêter de fumer. La diversité des réseaux montre que le tabagisme crée des espaces sociaux très différents : de communautés mixtes de fumeurs, non-fumeurs et ex-fumeurs à des groupes fortement ségrégués selon le statut tabagique.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire du cancer, cette collection de réseaux révèle l'architecture sociale du facteur de risque contrôlable le plus important. Les liens rouges denses signalent des zones de risque social où l'initiation au tabagisme est facilitée par la normalité et l'acceptabilité de ce comportement au sein des cercles proches. À l'inverse, les configurations dominées par des liens blancs et des nœuds verts identifient des écosystèmes protecteurs où l'arrêt du tabac est socialement soutenu et où le non-tabagisme est la norme dominante. La présence d'anciens fumeurs (nœuds bleus) au sein des réseaux fournit une preuve tangible que l'arrêt est possible, servant de modèles de comportement et de sources d'encouragement. Cette perspective permet l'identification ciblée des communautés à haut risque et le développement d'interventions qui utilisent l'influence positive des non-fumeurs et des anciens fumeurs pour catalyser l'arrêt et prévenir les cancers liés au tabac. De plus, pour réduire le tabagisme, la communauté doit faire partie de la solution : les anciens fumeurs, les non-fumeurs et les leaders informels peuvent apporter un soutien quotidien pour arrêter de fumer. Leur engagement modifie les normes de l'intérieur des réseaux, où la tentation et le soutien opèrent sur de courtes distances.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="smoking.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1189,6 +1303,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Geografia riscului</span>
                         <span class="lang-en" style="display:none;">Geography of risk</span>
+                        <span class="lang-fr" style="display:none;">Géographie du risque</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -1438,6 +1553,25 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile intitulée Géographie du risque montre que la santé n'est pas répartie au hasard dans la communauté, mais forme des points chauds (hot spots), c'est-à-dire des zones où certains comportements s'enracinent et se propagent d'une personne à l'autre. Les zones rouges marquent les endroits où des habitudes malsaines comme le tabagisme, la consommation excessive d'alcool ou la consommation d'aliments transformés salés circulent dans la communauté comme une infection invisible. Les zones vertes sont des sanctuaires de santé, des espaces sociaux où les gens font de l'exercice, mangent des repas équilibrés et s'influencent positivement les uns les autres. Ce que nous voyons sur la carte, ce ne sont pas seulement des rues et des espaces, mais des voies invisibles par lesquelles les habitudes quotidiennes sont transmises. Pour prévenir le cancer, il ne suffit pas de demander aux individus de changer par eux-mêmes ; nous devons transformer des espaces entiers de la communauté de zones rouges en zones vertes, en créant des lieux où la santé devient contagieuse. Les salles de sport, les écoles et les marchés de produits frais peuvent devenir les nouveaux points chauds ; cette fois pour des habitudes qui nous protègent, et non pour celles qui nous rendent malades.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Les gens ne vivent pas de manière isolée, mais dans des réseaux de liens et de rencontres sociales qui façonnent leur santé au quotidien. Une carte ne montre pas seulement des rues et des quartiers, mais aussi les itinéraires invisibles par lesquels les comportements, les normes et les habitudes sont transmis. Dans certains endroits, comme les marchés, les foires, les écoles ou les salles de sport, ces liens s'intensifient, donnant naissance à ce que l'on appelle des points chauds. Ici, les habitudes circulent comme l'information : ce qu'un individu fait peut rapidement être adopté par le groupe, et à son tour, le groupe peut influencer l'individu. Certaines pratiques ont des conséquences négatives sur la santé, comme la consommation d'alcool, le tabagisme ou les repas riches en graisses et en sucre. D'autres, au contraire, sont protectrices : l'activité physique, une alimentation équilibrée ou la participation à des événements culturels et sportifs.<br><br></p>
+
+                                <p>Les facteurs de risque tels que le tabagisme ou une mauvaise alimentation ne sont pas seulement des habitudes individuelles, mais s'organisent au sein des réseaux sociaux de la famille et des amis et, en même temps, dans des espaces géographiques spécifiques. Certains lieux cultivent la santé : une salle de sport, une école, une cour où les enfants jouent. D'autres deviennent un terreau fertile pour les comportements malsains : un bureau de tabac, un bar, une rue où la fumée ou la pollution devient la norme. La prévention primaire du cancer dans les zones rurales doit prendre en compte non seulement la façon dont ces risques sont transmis par nos réseaux sociaux, mais aussi leur géographie, les endroits où ils s'enracinent et se répètent. Comprendre la carte sociale et spatiale du risque, c'est être capable de jeter des ponts vers des habitudes plus saines.<br><br></p>
+
+                                <p>La toile intitulée Géographie du risque met en évidence divers points chauds de la communauté. Certains favorisent les comportements sains (zones marquées en vert), tandis que d'autres encouragent les comportements malsains (zones marquées en rouge). Les nœuds orange représentent les individus ayant des habitudes nocives, telles que le tabagisme, la consommation d'alcool ou un mode de vie sédentaire, tandis que les nœuds verts indiquent les personnes adoptant des comportements sains, comme faire de l'exercice, éviter les aliments salés ou ne pas fumer. La circulation de ces comportements, qu'ils soient sains ou malsains, se produit non seulement par les liens entre les individus, mais aussi par les espaces qu'ils habitent et dans lesquels ils interagissent.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire du cancer, cette carte socio-spatiale révèle comment le risque oncologique est réparti géographiquement en fonction de la concentration et de l'interaction des facteurs déterminants. Les zones rouges intenses signalent des écosystèmes de risque où de multiples expositions (tabagisme + alcool + sédentarité + mauvaise alimentation) créent un effet synergique qui amplifie le risque de cancer. À l'inverse, les îlots verts identifient des sanctuaires de santé, c'est-à-dire des espaces géographiques et sociaux qui favorisent les comportements protecteurs et peuvent servir de modèles pour l'ensemble de la communauté. La densité et la proximité des nœuds dans ces zones suggèrent que les interventions de prévention doivent être contextuelles, ciblant à la fois l'espace physique (par la création d'espaces verts, la limitation de l'accès aux substances nocives) et la dynamique sociale (en mobilisant les leaders locaux des zones vertes pour influencer les zones rouges). Cette approche géo-sociale permet de transformer la géographie du risque en une géographie d'opportunité pour la santé. De plus, il convient de noter que les résidents connaissent les points chauds et peuvent co-décider de la manière de les transformer, par exemple, d'espaces de risque en espaces de santé. Leur engagement rend les interventions contextuelles, adaptées aux rues, aux marchés et aux habitudes réelles de Lerești.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="topografie.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1449,6 +1583,7 @@
                     <h3 class="artwork-title">
                         <span class="lang-ro">Alchimia ingredientelor</span>
                         <span class="lang-en" style="display:none;">Alchemy of ingredients</span>
+                        <span class="lang-fr" style="display:none;">Alchimie des ingrédients</span>
                     </h3>
                     <div class="artwork-description-group">
                         <div class="artwork-description lang-ro">
@@ -1722,6 +1857,179 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>Le tableau intitulé Alchimie des ingrédients montre comment les aliments se connectent au sein de la cuisine traditionnelle d'Europe de l'Est. Chaque point de couleur représente un ingrédient : vert pour les légumes et les fruits, orange pour la viande et les produits laitiers, marron pour les céréales, jaune pour les huiles et rouge pour l'alcool. Les lignes qui les relient indiquent les ingrédients qui sont fréquemment utilisés ensemble dans les recettes. Ce que nous voyons, c'est que les légumes (les points verts) se trouvent au centre du réseau, se combinant avec presque tous les autres ingrédients.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Nous avons tendance à considérer la nutrition à travers des composants isolés tels que les vitamines, les protéines ou les glucides. Pourtant, la cuisine traditionnelle raconte une histoire différente : celle des connexions, du contexte et des combinaisons. La structure de notre alimentation est un réseau, et la comprendre peut changer notre façon de concevoir une alimentation équilibrée. Il n'y a pas que les personnes qui sont liées par des relations durables, comme l'amitié, la parenté, ou par des liens plus faibles avec des connaissances. Les aliments aussi sont connectés, formant des réseaux invisibles redécouverts à chaque repas. Un repas n'est pas seulement un moment pour observer comment les gens interagissent, mais aussi une fenêtre sur la façon dont les ingrédients se rencontrent et se complètent. Pour certains, les rouleaux de viande hachée grillée s'accompagnent toujours de pain, de moutarde, de frites et de bière. Pour d'autres, le petit-déjeuner signifie la combinaison de fromages, de charcuteries et de légumes. Pour comprendre comment nous pourrions intervenir sur les habitudes alimentaires, nous devons examiner non seulement la quantité ou le moment où les gens mangent, mais aussi la façon dont ils associent les aliments. Les réseaux d'ingrédients racontent des histoires subtiles sur qui nous sommes, sur nos habitudes et sur la santé que nous cultivons ou que nous perdons.<br><br></p>
+
+                                <p>La toile intitulée Alchimie des ingrédients présente 90 ingrédients alimentaires uniques, représentés sous forme de nœuds reliés par 710 liens. Ce réseau d'ingrédients est construit à partir de plus de 300 recettes d'Europe de l'Est, où une connexion n'apparaît que lorsque deux ingrédients ont été utilisés ensemble dans au moins quatre recettes différentes. Les données proviennent de l'étude publiée par Yong-Yeol Ahn et ses collègues dans Scientific Reports (2011). Les nœuds verts représentent les aliments d'origine végétale, les nœuds orange les produits d'origine animale, les nœuds marron les céréales et les produits à base de céréales, les nœuds jaunes les huiles et les graisses, et les nœuds rouges les boissons alcoolisées. Le résultat révèle les partenariats culinaires les plus fréquents et met en évidence nos préférences instinctives et nos habitudes d'association.<br><br></p>
+
+                                <p>Les cuisines traditionnelles, comme celles d'Europe de l'Est, ont évolué au fil des siècles grâce à des raffinements successifs, aboutissant à un système logique de combinaisons. Au centre du réseau se trouvent des ingrédients de base polyvalents (pommes de terre, légumes-racines, farine et œufs) qui soutiennent l'ensemble de la culture alimentaire. Autour d'eux, d'autres ingrédients s'organisent, formant une architecture du goût dans laquelle l'équilibre n'est pas une liste de règles rigides, mais une structure cohérente et bien connectée. Un repas équilibré ressemble à un groupe stable dans le réseau culinaire : un noyau de glucides (pain ou pommes de terre), lié à une source de protéines, et complété par les vitamines et minéraux des légumes.<br><br></p>
+
+                                <p>La leçon d'Alchimie des ingrédients est que les traditions culinaires portent en elles une sagesse innée. Ce sont des systèmes conçus pour fournir des repas nourrissants et satisfaisants à partir des aliments disponibles. Plutôt que de voir l'alimentation saine comme un ensemble d'interdits, nous pouvons la comprendre comme un acte de connexion : une grammaire de l'alimentation qui nous apprend à construire des repas non seulement équilibrés selon les normes modernes, mais aussi riches en histoire et en culture.<br><br></p>
+
+                                <p>Du point de vue de la prévention primaire du cancer, ce réseau culinaire montre comment les combinaisons traditionnelles d'ingrédients peuvent servir d'outils naturels de protection oncologique. La prédominance des nœuds verts au cœur du réseau confirme le rôle protecteur des aliments d'origine végétale, riches en antioxydants, en fibres et en composés phytochimiques qui réduisent le risque de cancer. Les connexions denses entre les céréales complètes (nœuds marron), les légumes (verts) et les huiles saines (jaunes) illustrent la structure d'un régime anticancer qui n'est pas imposé artificiellement, mais dérivé de la sagesse culinaire accumulée. Les positions périphériques et la faible connectivité des boissons alcoolisées (rouges) suggèrent que les cuisines traditionnelles reconnaissent intuitivement les limites de la consommation d'alcool. Cette perspective permet de développer des interventions nutritionnelles qui ne luttent pas contre la culture alimentaire locale, mais l'affinent et la valorisent, transformant les réseaux culinaires existants en écosystèmes préventifs qui réduisent le risque de cancer par le plaisir et la continuité culturelle, et non par des restrictions. De plus, les recettes d'une communauté constituent un patrimoine vivant ; l'engagement citoyen permet d'apporter de petites modifications culturellement acceptables ayant un impact significatif sur la santé. Co-créer des menus et des ateliers avec les habitants fait de la tradition une alliée de la prévention.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="food_network.png" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork" id="painting_households">
+                <div class="artwork-image">
+                    <img src="Households.jpeg" alt="Households" class="modal-trigger">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span class="lang-ro">Anatomia gospodăriilor</span>
+                        <span class="lang-en" style="display:none;">The anatomy of households</span>
+                        <span class="lang-fr" style="display:none;">L'anatomie des foyers</span>
+                    </h3>
+                    <div class="artwork-description-group">
+                        <div class="artwork-description lang-ro">
+                            <p>Pânza intitulată Anatomia gospodăriilor prezintă 86 de gospodării din Lerești ca portrete de lumină. Fiecare imagine oferă o amprentă vizuală a combinării complexe a factorilor sociali de risc ai cancerului. Forma sa vine din fizica cuantică (vezi orbitalul hidrogenului) și codifică două proprietăți ale gospodăriei: mărimea (câți membri are)  și riscurile sociale (câte tipuri diferite de risc pentru cancer sunt prezente, i.e., fumatul, alimentația procesată, obezitatea și sedentarismul). Luminozitatea arată cât de intens este riscul. O imagine strălucitoare înseamnă risc ridicat. Una estompată, risc scăzut. Fiecărei combinații specifice de factori de risc dintr-o gospodărie îi corespunde o imagine preluată dintr-o librărie de orbitali ai hidrogenului. Gospodăriile sunt ordonate după mărime și apoi după formă. Privite împreună, cele 86 de portrete dezvăluie diverse tipare (de exemplu, gospodării cu forme identice care diferă doar prin strălucire). Ceea ce un tabel statistic nu poate arăta devine vizibil dintr-o privire. Fiecare familie trăiește într-un ecosistem de risc propriu. Prevenția primară a cancerului nu poate fi aceeași pentru toți. Nu doar oamenii sunt diferiți ci și profilul gospodăriilor în care trăiesc. Acest profil de gospodărie este rezultatul îmbinării complexe a comportamentelor sociale de risc pe care le au cei care locuiesc împreună. O gospodărie unde fumatul domină are nevoie de un alt tip de intervenție decât una unde obezitatea și sedentarismul se întăresc reciproc. Această pânză face vizibilă o realitate pe care comunitățile o trăiesc zilnic, dar pe care rareori o văd. <br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Riscul nu este un număr sau o medie aritmetică. Riscul este o arhitectură. În interiorul fiecărei gospodării, factorii de risc pentru cancer nu se adună ca o sumă simplă. Ei se combină, se suprapun și se influențează reciproc. Formează o structură complexă pe care cifrele singure nu o pot surprinde. Două gospodării cu același scor mediu de risc pot arăta complet diferit: una în care toți membrii fumează dar nimeni nu este obez, și una în care un singur membru cumulează toate cele patru riscuri, în timp ce restul familiei este sănătos. Această diferență contează enorm pentru prevenție. Dar se pierde în orice tabel sau diagramă cu bare.
+                                    Am avut nevoie de un limbaj vizual care să păstreze întreaga complexitate a profilului de risc, fără a o reduce la o singură dimensiune. Am împrumutat din fizică o familie de forme (i.e., orbitalii atomului de hidrogen) și le-am folosit cu valoare pur ilustrativă pentru a codifica vizual trei proprietăți ale fiecărei gospodării.
+Prima proprietate este mărimea gospodăriei. Gospodăriile mai mari primesc forme cu mai multe straturi. A doua proprietate este diversitatea riscurilor prezente: câte dintre cele patru tipuri de risc (fumatul, consumul de alimente procesate, obezitatea, inactivitatea fizică) există în acea casă. Mai multe tipuri de risc produc forme cu mai multe loburi. A treia proprietate este tipul dominant de risc, i.e., care comportamente cântăresc mai mult. Aceasta rotește și înclină forma, astfel încât două gospodării cu aceeași mărime și aceeași diversitate de riscuri, dar cu profile diferite, arată vizibil diferit.
+
+Luminozitatea este singura dimensiune direct cantitativă. Ea este proporțională cu scorul mediu BRI-4 (Indicele Comportamental de Risc, 0–4, calculat pentru date culese din fiecare gospodărie) și reprezintă intensitatea cumulată a riscului. O imagine estompată înseamnă risc scăzut. Una strălucitoare înseamnă risc ridicat. Corespondența este consistentă: aceleași proprietăți produc întotdeauna aceeași formă, iar proprietăți diferite produc întotdeauna forme diferite.
+Pânza reunește 86 de gospodării multi-persoană din primul val al studiului longitudinal de rețele personale desfășurat în localitatea Lerești (Argeș), în cadrul proiectului 4P-CAN. Fiecare imagine este preluată dintr-o librărie de forme (orbitali ai hidrogenului) și asociată gospodăriei în funcție de profilul de risc identificat. Gospodăriile sunt ordonate descrescător după numărul de membri. În cadrul aceleiași mărimi, sunt grupate după formă, astfel încât formele identice apar adiacent, variind doar prin strălucire. Paleta de culori urmează schema inferno: de la violet închis (risc scăzut) la galben luminos (risc ridicat).
+Din perspectiva prevenției primare a cancerului, această colecție de portrete dezvăluie o realitate esențială: profilul de risc al unei gospodării este ireductibil multidimensional. Un scor mediu unic colapsează diferențe calitative care contează pentru designul intervențiilor. O gospodărie unde obezitatea este riscul dominant necesită o abordare diferită față de una unde fumatul și inactivitatea fizică coexistă. Vizualizarea păstrează aceste distincții într-o formă imediat perceptibilă. Gruparea gospodăriilor după formă dezvăluie familii de profiluri de risc: clustere de gospodării care trăiesc în ecosisteme de risc similare, chiar dacă intensitatea diferă. Această perspectivă permite dezvoltarea de intervenții tipizate, adaptate nu doar intensității riscului, ci și naturii și combinației sale specifice. Trebuie subliniat că cetățenii pot recunoaște în aceste portrete structura propriei gospodării. Implicarea lor în interpretarea și discutarea acestor imagini transformă datele abstracte în cunoaștere acționabilă, ancorată în realitatea cotidiană a familiei.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="Households.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate întreagă</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="artwork-description lang-en" style="display:none;">
+                            <p>The canvas titled The anatomy of households presents 86 households from Lerești as portraits of light. Each image offers a visual fingerprint of the complex combination of social cancer risk factors. Its shape is borrowed from quantum physics (see the hydrogen orbital) and encodes two properties of the household: its size (how many members it has) and its social risks (how many different types of cancer risk are present, i.e., smoking, processed food consumption, obesity, and physical inactivity). Brightness shows how intense the risk is. A glowing image means high risk. A dim one means low risk. Each specific combination of risk factors within a household corresponds to an image drawn from a library of hydrogen orbitals. Households are sorted by size and then by shape. Viewed together, the 86 portraits reveal diverse patterns (for example, households with identical shapes that differ only in brightness). What a statistical table cannot show becomes visible at a glance. Every family lives within its own risk ecosystem. Primary cancer prevention cannot be the same for everyone. Not only are people different, but so are the profiles of the households they live in. This household profile is the result of the complex interplay of social risk behaviors among those who live together. A household where smoking dominates needs a different type of intervention than one where obesity and physical inactivity reinforce each other. This canvas makes visible a reality that communities live every day but rarely see.
+<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Risk is not a number or an arithmetic mean. Risk is an architecture. Inside every household, cancer risk factors do not add up as a simple sum. They combine, overlap, and influence one another. They form a complex structure that numbers alone cannot capture. Two households with the same average risk score can look entirely different: one where all members smoke but no one is obese, and one where a single member accumulates all four risks while the rest of the family is healthy. This difference matters enormously for prevention. But it is lost in any table or bar chart.
+We needed a visual language that could preserve the full complexity of a risk profile without reducing it to a single dimension. We borrowed from physics a family of shapes (i.e., the orbitals of the hydrogen atom) and used them in a purely illustrative way to visually encode three properties of each household.
+The first property is household size. Larger households receive shapes with more layers. The second property is the diversity of risks present: how many of the four risk types (smoking, processed food consumption, obesity, physical inactivity) exist in that home. More risk types produce shapes with more lobes. The third property is the dominant type of risk, i.e., which behaviors weigh more. This tilts and rotates the shape, so that two households with the same size and the same diversity of risks but different profiles look visibly different.
+Brightness is the only directly quantitative dimension. It is proportional to the mean BRI-4 score (Behavioral Risk Index, 0–4, calculated from data collected in each household) and represents the cumulative intensity of risk. A dim image means low risk. A bright one means high risk. The correspondence is consistent: the same properties always produce the same shape, and different properties always produce different shapes.
+The canvas brings together 86 multi-person households from the first wave of the longitudinal personal network study conducted in Lerești (Argeș), within the 4P-CAN project. Each image is drawn from a library of shapes (hydrogen orbitals) and matched to the household based on its identified risk profile. Households are sorted in descending order by number of members. Within the same size, they are grouped by shape, so that identical shapes appear side by side, varying only in brightness. The color palette follows the inferno scheme: from dark violet (low risk) to bright yellow (high risk).
+From the perspective of primary cancer prevention, this collection of portraits reveals an essential reality: the risk profile of a household is irreducibly multidimensional. A single average score collapses qualitative differences that matter for intervention design. A household where obesity is the dominant risk requires a different approach than one where smoking and physical inactivity coexist. The visualization preserves these distinctions in an immediately perceptible form. Grouping households by shape reveals families of risk profiles: clusters of households living within similar risk ecosystems, even if intensity differs. This perspective enables the development of typified interventions, adapted not only to the intensity of risk but also to its specific nature and combination. It should be underlined that citizens can recognize in these portraits the structure of their own household. Their engagement in interpreting and discussing these images transforms abstract data into actionable knowledge, anchored in the everyday reality of the family.
+<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="Households.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile intitulée L'anatomie des foyers présente 86 foyers de Lerești sous forme de portraits de lumière. Chaque image offre une empreinte visuelle de la combinaison complexe des facteurs sociaux de risque de cancer. Sa forme est empruntée à la physique quantique (voir l'orbitale de l'hydrogène) et code deux propriétés du foyer : sa taille (le nombre de ses membres) et ses risques sociaux (combien de types différents de risques de cancer sont présents, c'est-à-dire le tabagisme, la consommation d'aliments transformés, l'obésité et la sédentarité). La luminosité montre l'intensité du risque. Une image éclatante signifie un risque élevé. Une image sombre signifie un risque faible. Chaque combinaison spécifique de facteurs de risque au sein d'un foyer correspond à une image tirée d'une bibliothèque d'orbitales d'hydrogène. Les foyers sont triés par taille, puis par forme. Vus ensemble, les 86 portraits révèlent divers modèles (par exemple, des foyers ayant des formes identiques qui ne diffèrent que par leur luminosité). Ce qu'un tableau statistique ne peut pas montrer devient visible d'un seul coup d'œil. Chaque famille vit au sein de son propre écosystème de risque. La prévention primaire du cancer ne peut pas être la même pour tout le monde. Non seulement les personnes sont différentes, mais les profils des foyers dans lesquels elles vivent le sont aussi. Ce profil de foyer est le résultat de l'interaction complexe des comportements sociaux à risque parmi ceux qui vivent ensemble. Un foyer où le tabagisme domine nécessite un type d'intervention différent de celui où l'obésité et la sédentarité se renforcent mutuellement. Cette toile rend visible une réalité que les communautés vivent tous les jours mais voient rarement.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Le risque n'est pas un chiffre ou une moyenne arithmétique. Le risque est une architecture. À l'intérieur de chaque foyer, les facteurs de risque de cancer ne s'additionnent pas comme une simple somme. Ils se combinent, se superposent et s'influencent mutuellement. Ils forment une structure complexe que les chiffres seuls ne peuvent capturer. Deux foyers ayant le même score de risque moyen peuvent avoir un aspect totalement différent : l'un où tous les membres fument mais où personne n'est obèse, et l'autre où un seul membre cumule les quatre risques tandis que le reste de la famille est en bonne santé. Cette différence compte énormément pour la prévention. Mais elle est perdue dans n'importe quel tableau ou diagramme à barres.
+
+Nous avions besoin d'un langage visuel capable de préserver toute la complexité d'un profil de risque sans le réduire à une seule dimension. Nous avons emprunté à la physique une famille de formes (c'est-à-dire les orbitales de l'atome d'hydrogène) et les avons utilisées de manière purement illustrative pour coder visuellement trois propriétés de chaque foyer.
+
+La première propriété est la taille du foyer. Les foyers plus grands reçoivent des formes avec plus de couches.
+
+La deuxième propriété est la diversité des risques présents : combien des quatre types de risques (tabagisme, consommation d'aliments transformés, obésité, sédentarité) existent dans ce foyer. Plus il y a de types de risques, plus les formes comportent de lobes.
+
+La troisième propriété est le type de risque dominant, c'est-à-dire les comportements qui pèsent le plus. Cela incline et fait pivoter la forme, de sorte que deux foyers ayant la même taille et la même diversité de risques mais des profils différents ont un aspect visiblement différent.
+
+La luminosité est la seule dimension directement quantitative. Elle est proportionnelle au score moyen BRI-4 (Indice de Risque Comportemental, de 0 à 4, calculé à partir des données collectées dans chaque foyer) et représente l'intensité cumulée du risque. Une image sombre signifie un risque faible. Une image brillante signifie un risque élevé. La correspondance est cohérente : les mêmes propriétés produisent toujours la même forme, et des propriétés différentes produisent toujours des formes différentes.
+
+La toile rassemble 86 foyers de plusieurs personnes issus de la première vague de l'étude longitudinale sur les réseaux personnels menée à Lerești (Argeș), dans le cadre du projet 4P-CAN. Chaque image est tirée d'une bibliothèque de formes (orbitales d'hydrogène) et associée au foyer en fonction de son profil de risque identifié. Les foyers sont triés par ordre décroissant en fonction du nombre de membres. Au sein d'une même taille, ils sont regroupés par forme, de sorte que des formes identiques apparaissent côte à côte, ne variant que par leur luminosité. La palette de couleurs suit le schéma inferno : du violet foncé (risque faible) au jaune vif (risque élevé).
+
+Du point de vue de la prévention primaire du cancer, cette collection de portraits révèle une réalité essentielle : le profil de risque d'un foyer est irréductiblement multidimensionnel. Un seul score moyen efface des différences qualitatives qui comptent pour la conception des interventions. Un foyer où l'obésité est le risque dominant nécessite une approche différente de celle d'un foyer où le tabagisme et la sédentarité coexistent. La visualisation préserve ces distinctions sous une forme immédiatement perceptible. Le regroupement des foyers par forme révèle des familles de profils de risque : des groupes de foyers vivant au sein d'écosystèmes de risque similaires, même si l'intensité diffère. Cette perspective permet de développer des interventions standardisées, adaptées non seulement à l'intensité du risque, mais aussi à sa nature spécifique et à sa combinaison. Il convient de souligner que les citoyens peuvent reconnaître dans ces portraits la structure de leur propre foyer. Leur engagement dans l'interprétation et la discussion de ces images transforme des données abstraites en connaissances exploitables, ancrées dans la réalité quotidienne de la famille.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="Households.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork" id="painting_health_sanctuaries">
+                <div class="artwork-image">
+                    <img src="HealthHeat.jpeg" alt="Health Sanctuaries" class="modal-trigger">
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span class="lang-ro">Sanctuare de sănătate</span>
+                        <span class="lang-en" style="display:none;">Health Sanctuaries</span>
+                        <span class="lang-fr" style="display:none;">Sanctuaires de santé</span>
+                    </h3>
+                    <div class="artwork-description-group">
+                        <div class="artwork-description lang-ro">
+                            <p>Pânza intitulată Sanctuare de sănătate arată cum riscul de cancer se grupează în rețeaua socială a localității Lerești, dincolo de ceea ce întâmplarea ar putea explica. Cele patru panouri corespund celor patru valuri ale studiului longitudinal: în fiecare, aceleași 2.604 persoane ocupă aceleași poziții (determinate de legăturile sociale dintre ele), iar ceea ce se schimbă este doar distribuția riscului comportamental. Zonele portocalii marchează vecinătăți sociale unde riscul este mai ridicat decât ar fi dacă comportamentele ar fi distribuite aleatoriu în rețea. Zonele albastre sunt mai sănătoase decât ar prezice întâmplarea. Privite împreună, cele patru hărți dezvăluie o geografie socială persistentă: anumite regiuni ale rețelei rămân zone fierbinți de risc val după val, în timp ce altele funcționează ca sanctuare de sănătate. Această vizualizare demonstrează că riscul de cancer nu se risipește la întâmplare prin comunitate, ci se organizează de-a lungul legăturilor sociale, iar prevenția eficientă trebuie să vizeze nu doar indivizi izolați, ci întregi constelații de relații. Implicarea cetățenilor este esențială: ei sunt cei care cunosc aceste constelații, le trăiesc zilnic și pot co-decide cum să le transforme din spații de risc în spații de protecție.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Riscul nu se oprește la pragul casei. Dincolo de gospodărie, comportamentele de sănătate circulă prin rețele mai largi de prieteni, rude, vecini și colegi. Ceea ce mâncăm, dacă fumăm, cât de activi suntem, toate acestea sunt influențate de oamenii din jurul nostru, nu doar de cei cu care locuim. Dar cât din această grupare a riscului este reală și cât este doar o iluzie statistică? Pentru a răspunde, avem nevoie de o comparație riguroasă: nu doar să vedem unde se concentrează riscul, ci să demonstrăm că acea concentrare depășește ceea ce întâmplarea pură ar putea produce.
+
+Pânza intitulată Sanctuare de sănătate prezintă o analiză de densitate a riscului comportamental în rețeaua socială completă a localității Lerești, construită din datele studiului longitudinal de rețele personale desfășurat în cadrul proiectului 4P-CAN. Rețeaua cuprinde 2.604 persoane (140 de participanți direcți și 2.464 de persoane menționate de aceștia) și 11.394 de legături sociale (4.039 ego-alter și 7.355 alter-alter). Pozițiile nodurilor sunt calculate printr-un algoritm de dispunere bazat pe forțe (force-directed layout), care plasează persoanele cu multe legături comune aproape unele de altele. Pozițiile sunt calculate o singură dată din rețeaua combinată a tuturor valurilor și rămân fixe, astfel încât schimbările vizuale între panouri reflectă exclusiv modificări în distribuția riscului, nu în structura rețelei.
+
+Pentru fiecare val, câmpul de risc observat este calculat prin estimare kernel de densitate (Gaussian, lățime de bandă 0.035 unități de layout, grilă 600×600 pixeli), unde fiecare pixel primește media ponderată a scorurilor BRI-4 ale persoanelor din vecinătatea sa. Câmpul așteptat este generat prin 500 de permutări aleatorii: scorurile BRI-4 sunt redistribuite aleatoriu pe aceleași poziții, iar media celor 500 de câmpuri rezultate reprezintă ce ar arăta riscul dacă nu ar exista nicio asociere între comportament și poziția în rețea. Deviația (observat minus așteptat) este cartografiată cu o paletă divergentă: albastru pentru zone mai sănătoase decât întâmplarea, gri deschis pentru zero, portocaliu pentru zone mai riscante.
+
+Cele patru panouri corespund celor patru valuri de colectare a datelor. Riscul mediu BRI-4 observat variază între 1,21 și 2,87 în diferite regiuni ale rețelei, în timp ce câmpul așteptat (aleatoriu) variază doar între 1,70 și 1,77, confirmând că variația spațială observată depășește dramatic ceea ce întâmplarea ar putea produce. Zonele portocalii persistente de-a lungul valurilor identifică regiuni ale rețelei sociale unde riscul se auto-întreține prin mecanisme de influență socială, homofilie sau expuneri comune. Zonele albastre persistente identifică ecosisteme protectoare.
+Din perspectiva prevenției primare a cancerului, această pânză dezvăluie geografia socială a riscului oncologic: nu pe hartă, ci în spațiul relațiilor umane. Persistența zonelor fierbinți de-a lungul timpului sugerează că simpla informare individuală nu este suficientă pentru a sparge ciclurile de risc, deoarece rețelele sociale le regenerează. Intervențiile eficiente trebuie să vizeze nu doar persoane, ci constelații de relații: grupuri de prieteni, familii extinse, vecinătăți sociale unde comportamentele se amplifică reciproc. În același timp, zonele albastre oferă un model: ele demonstrează că rețelele sociale pot funcționa și ca sisteme de protecție, unde obiceiurile sănătoase sunt întărite și susținute de cei din jur. Identificarea și mobilizarea acestor sanctuare sociale pentru a extinde influența pozitivă către zonele de risc reprezintă o strategie de prevenție pe care datele o legitimează, dar pe care doar implicarea cetățenilor o poate transforma în practică. Ei sunt cei care știu de ce anumite grupuri din comunitate rămân sănătoase și ce anume menține riscul în altele, informație pe care nicio permutare statistică nu o poate dezvălui.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Afișează mai mult</button>
+                                <a href="HealthHeat.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-ro">Pictură calitate întreagă</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="artwork-description lang-en" style="display:none;">
+                            <p>The canvas titled Health Sanctuaries shows how cancer risk clusters across the social network of Lerești. It reveals patterns that go beyond what chance alone could explain. The four panels correspond to the four waves of the longitudinal study. In each one, the same 2,604 individuals occupy the same positions. These positions are determined by the social ties between them. Only the distribution of behavioral risk changes. Orange zones mark social neighborhoods where risk is higher than it would be if behaviors were randomly spread across the network. Blue zones are healthier than chance would predict. Viewed together, the four maps reveal a persistent social geography. Certain regions of the network remain risk hot spots wave after wave. Others function as health sanctuaries. This visualization demonstrates that cancer risk does not scatter randomly through the community. It organizes itself along social ties. Effective prevention must target not just isolated individuals but entire constellations of relationships. Citizen engagement is essential. They are the ones who know these constellations. They live them daily. They can co-decide how to transform them from spaces of risk into spaces of protection.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Risk does not stop at the doorstep. Beyond the household, health behaviors circulate through broader networks of friends, relatives, neighbors, and colleagues. What we eat, whether we smoke, how active we are: all of these are influenced by the people around us. Not just by those we live with. But how much of this clustering is real? And how much is merely a statistical illusion? To answer, we need a rigorous comparison. We need to show not just where risk concentrates, but that this concentration exceeds what pure chance could produce.
+The canvas titled Health Sanctuaries presents a density analysis of behavioral risk across the complete social network of Lerești. It is built from the data of the longitudinal personal network study conducted within the 4P-CAN project. The network comprises 2,604 individuals: 140 direct participants and 2,464 individuals mentioned by them. It contains 11,394 social ties: 4,039 between participants and their contacts, and 7,355 among the contacts themselves. Node positions are calculated using a force-directed layout algorithm. This places individuals with many shared ties close to one another. Positions are computed once from the combined network across all waves. They remain fixed. Visual changes between panels reflect exclusively changes in risk distribution, not in network structure.
+
+For each wave, the observed risk field is calculated through Gaussian kernel density estimation (bandwidth 0.035 layout units, 600×600 pixel grid). Each pixel receives the weighted mean of BRI-4 scores of individuals in its neighborhood. The expected field is generated through 500 random permutations. BRI-4 scores are randomly redistributed across the same positions. The average of the 500 resulting fields represents what risk would look like if there were no association between behavior and network position. The deviation (observed minus expected) is mapped with a diverging palette: blue for zones healthier than chance, light grey for zero, orange for zones riskier than chance.
+
+The four panels correspond to the four waves of data collection. The observed mean BRI-4 ranges from 1.21 to 2.87 across different regions of the network. The expected (random) field varies only between 1.70 and 1.77. This confirms that the observed spatial variation dramatically exceeds what chance could produce. Persistent orange zones across waves identify regions where risk sustains itself. This happens through social influence, homophily, or shared exposures. Persistent blue zones identify protective ecosystems.
+From the perspective of primary cancer prevention, this canvas reveals the social geography of cancer risk. Not on a map, but in the space of human relationships. The persistence of hot spots over time suggests that individual information alone is not enough to break cycles of risk. Social networks regenerate them. Effective interventions must target not just individuals but constellations of relationships: groups of friends, extended families, social neighborhoods where behaviors mutually reinforce one another. At the same time, blue zones offer a model. They show that social networks can also function as systems of protection. Healthy habits are reinforced and sustained by those around us. Identifying and mobilizing these social sanctuaries to extend their positive influence toward risk zones is a prevention strategy that the data legitimize. But only citizen engagement can translate it into practice. They are the ones who know why certain groups in the community remain healthy. And what sustains risk in others. No statistical permutation can reveal that.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Show more</button>
+                                <a href="HealthHeat.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-en">Full Quality Painting</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="artwork-description lang-fr" style="display:none;">
+                            <p>La toile intitulée « Sanctuaires de santé » montre comment le risque de cancer se regroupe à travers le réseau social de Lerești. Elle révèle des modèles qui vont au-delà de ce que le hasard seul pourrait expliquer. Les quatre panneaux correspondent aux quatre vagues de l'étude longitudinale. Dans chacun d'eux, les mêmes 2 604 individus occupent les mêmes positions. Ces positions sont déterminées par les liens sociaux qui les unissent. Seule la distribution du risque comportemental change. Les zones orange marquent les quartiers sociaux où le risque est plus élevé qu'il ne le serait si les comportements étaient répartis de manière aléatoire sur le réseau. Les zones bleues sont plus saines que ce que le hasard prédirait. Vues ensemble, les quatre cartes révèlent une géographie sociale persistante. Certaines régions du réseau restent des points chauds de risque vague après vague. D'autres fonctionnent comme des sanctuaires de santé. Cette visualisation démontre que le risque de cancer ne se disperse pas au hasard dans la communauté. Il s'organise le long des liens sociaux. Une prévention efficace doit cibler non seulement les individus isolés, mais des constellations entières de relations. L'engagement citoyen est essentiel. Ce sont eux qui connaissent ces constellations. Ils les vivent au quotidien. Ils peuvent co-décider de la manière de les transformer d'espaces de risque en espaces de protection.<br><br></p>
+                            <div class="more-text" style="display:none;">
+                                <hr style="border: none; border-top: 2px solid #ffd700; margin: 20px auto; width: 25%;" />
+                                <p>Le risque ne s'arrête pas sur le pas de la porte. Au-delà du foyer, les comportements de santé circulent à travers des réseaux plus vastes d'amis, de parents, de voisins et de collègues. Ce que nous mangeons, si nous fumons, notre niveau d'activité physique : tout cela est influencé par les personnes qui nous entourent. Et pas seulement par celles avec qui nous vivons. Mais quelle part de ce regroupement est réelle ? Et quelle part n'est qu'une simple illusion statistique ? Pour répondre, nous avons besoin d'une comparaison rigoureuse. Nous devons montrer non seulement où le risque se concentre, mais aussi que cette concentration dépasse ce que le pur hasard pourrait produire.
+
+La toile intitulée « Sanctuaires de santé » présente une analyse de densité du risque comportemental sur l'ensemble du réseau social de Lerești. Elle est construite à partir des données de l'étude longitudinale sur les réseaux personnels menée dans le cadre du projet 4P-CAN. Le réseau comprend 2 604 individus : 140 participants directs et 2 464 individus mentionnés par eux. Il contient 11 394 liens sociaux : 4 039 entre les participants et leurs contacts, et 7 355 entre les contacts eux-mêmes. Les positions des nœuds sont calculées à l'aide d'un algorithme de tracé dirigé par la force (force-directed layout). Cela place les individus ayant de nombreux liens en commun à proximité les uns des autres. Les positions sont calculées une seule fois à partir du réseau combiné sur toutes les vagues. Elles restent fixes. Les changements visuels entre les panneaux reflètent exclusivement les changements dans la distribution du risque, et non dans la structure du réseau. Pour chaque vague, le champ de risque observé est calculé par estimation de la densité par noyau gaussien (bande passante de 0,035 unité de mise en page, grille de 600×600 pixels). Chaque pixel reçoit la moyenne pondérée des scores BRI-4 des individus dans son voisinage. Le champ attendu est généré par 500 permutations aléatoires. Les scores BRI-4 sont redistribués aléatoirement sur les mêmes positions. La moyenne des 500 champs résultants représente ce à quoi ressemblerait le risque s'il n'y avait aucune association entre le comportement et la position dans le réseau. L'écart (observé moins attendu) est cartographié avec une palette divergente : bleu pour les zones plus saines que le hasard, gris clair pour zéro, orange pour les zones plus à risque que le hasard. Les quatre panneaux correspondent aux quatre vagues de collecte de données. La moyenne observée du BRI-4 varie de 1,21 à 2,87 dans les différentes régions du réseau. Le champ attendu (aléatoire) ne varie qu'entre 1,70 et 1,77. Cela confirme que la variation spatiale observée dépasse considérablement ce que le hasard pourrait produire. Les zones orange persistantes à travers les vagues identifient les régions où le risque se maintient. Cela se produit par influence sociale, homophilie ou expositions partagées. Les zones bleues persistantes identifient des écosystèmes protecteurs.
+
+Du point de vue de la prévention primaire du cancer, cette toile révèle la géographie sociale du risque de cancer. Non pas sur une carte, mais dans l'espace des relations humaines. La persistance des points chauds au fil du temps suggère que l'information individuelle seule ne suffit pas à briser les cycles de risque. Les réseaux sociaux les régénèrent. Des interventions efficaces doivent cibler non seulement les individus, mais aussi des constellations de relations : groupes d'amis, familles élargies, quartiers sociaux où les comportements se renforcent mutuellement. Dans le même temps, les zones bleues offrent un modèle. Elles montrent que les réseaux sociaux peuvent également fonctionner comme des systèmes de protection. Les habitudes saines sont renforcées et maintenues par ceux qui nous entourent. Identifier et mobiliser ces sanctuaires sociaux pour étendre leur influence positive vers les zones à risque est une stratégie de prévention que les données légitiment. Mais seul l'engagement citoyen peut la traduire dans la pratique. Ce sont eux qui savent pourquoi certains groupes de la communauté restent en bonne santé. Et ce qui maintient le risque chez d'autres. Aucune permutation statistique ne peut révéler cela.<br><br></p>
+                            </div>
+                            <div class="button-group">
+                                <button class="show-more-btn">Voir plus</button>
+                                <a href="HealthHeat.jpeg" target="_blank" class="full-quality-btn">
+                                    <span class="lang-fr">Peinture qualité complète</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1756,6 +2064,13 @@
                             </p>
                             <p>An event about community, innovation and prevention</p>
                         </div>
+                        <div class="lang-fr" style="display:none;">
+                            <p><strong>4P-CAN - Histoires numériques du Living Lab de Lerești</strong></p>
+                            <p>Pour plus d'informations :</p>
+                            <p><a href="https://4p-can.eu/ecosisteme-vii/" target="_blank">4p-can.eu/ecosisteme-vii</a>
+                            </p>
+                            <p>Un événement sur la communauté, l'innovation et la prévention</p>
+                        </div>
                     </div>
                 </div>
                 <div class="copyright">
@@ -1776,12 +2091,20 @@
                                 office@ino-med.ro
                                 ©️2025 Center for Innovation in Medicine. All rights reserved.</small></p>
                     </div>
+                    <div class="lang-fr" style="display:none;">
+                        <p><small>Toutes les images et tous les textes de ce site sont protégés par le droit d'auteur
+                                et constituent la propriété privée des auteurs et partenaires. La copie, le
+                                téléchargement, la redistribution, l'impression ou la création d'œuvres dérivées sont
+                                strictement interdits sans le consentement écrit des titulaires de droits. Pour les
+                                demandes de licence, veuillez contacter office@ino-med.ro
+                                ©️2025 Centre pour l'innovation en médecine. Tous droits réservés.</small></p>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
     
-    <script src="script.js"></script>
+    <script src="script.js?v=20260318"></script>
 </body>
 
 </html>
