@@ -66,6 +66,24 @@ document.addEventListener('DOMContentLoaded', function () {
             langSelect.value = lang;
         }
 
+        const foodNetworkArtwork = document.getElementById('painting_food_network');
+        if (foodNetworkArtwork) {
+            const previewImage = foodNetworkArtwork.querySelector('.artwork-image img.modal-trigger');
+            const fullQualityButtons = foodNetworkArtwork.querySelectorAll('.full-quality-btn');
+
+            if (previewImage) {
+                previewImage.src = lang === 'ro'
+                    ? (previewImage.dataset.roSrc || previewImage.src)
+                    : (previewImage.dataset.altSrc || previewImage.src);
+            }
+
+            fullQualityButtons.forEach(button => {
+                button.href = lang === 'ro'
+                    ? (button.dataset.roHref || button.href)
+                    : (button.dataset.altHref || button.href);
+            });
+        }
+
         // Update show more/less buttons text
         document.querySelectorAll('.show-more-btn').forEach(btn => {
             const desc = btn.closest('.artwork-description');
